@@ -1,0 +1,61 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mi-tienda-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-06-17",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  "vars": {
+    "BASE_URL": "http://localhost:8787",
+    "R2_PUBLIC_URL": "https://assets-mitienda-dev.franciscosolis.cl",
+    "EMAIL_FROM": "miTienda <no-reply@mitienda.local>",
+    "EMAIL_PROVIDER": "resend",
+    "OAUTH_REDIRECT_BASE": "http://localhost:8787"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "mi-tienda-db",
+      "database_id": "18c6c3e4-a88b-4c7c-9aef-20bcb0e4510c",
+      "migrations_dir": "drizzle/migrations"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "KV_SESSIONS",
+      "id": "10f5d5898f8f4636aefdaaa02f43b6de"
+    },
+    {
+      "binding": "KV_CUSTOMER_SESSIONS",
+      "id": "3801d9e260614a0caea6b6cf7a8eb083"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "R2_BUCKET",
+      "bucket_name": "mi-tienda-assets-dev",
+    }
+  ],
+  "env": {
+    "prod": {
+      "vars": {
+        "BASE_URL": "https://api-mitienda.franciscosolis.cl",
+        "R2_PUBLIC_URL": "https://assets-mitienda.franciscosolis.cl",
+        "EMAIL_FROM": "miTienda <noreply@franciscosolis.cl>",
+        "EMAIL_PROVIDER": "resend",
+        "OAUTH_REDIRECT_BASE": "https://api-mitienda.franciscosolis.cl"
+      },
+      "r2_buckets": [
+        {
+          "binding": "R2_BUCKET",
+          "bucket_name": "mi-tienda-assets"
+        }
+      ],
+    }
+  }
+}

@@ -1,0 +1,7 @@
+# Copy to `.dev.vars` and fill in for local development.
+# In production set these with: wrangler secret put <NAME>
+GOOGLE_CLIENT_ID=""
+GOOGLE_CLIENT_SECRET=""
+GITHUB_CLIENT_ID=""
+GITHUB_CLIENT_SECRET=""
+RESEND_API_KEY=""
