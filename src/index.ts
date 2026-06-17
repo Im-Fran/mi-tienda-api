@@ -3,6 +3,7 @@ import type { ContentfulStatusCode } from "hono/utils/http-status";
 import { AppError } from "./lib/errors";
 import { error, fail, success } from "./lib/jsend";
 import { dbMiddleware } from "./middleware/db";
+import { openApiRouter } from "./openapi";
 import { adminRouter } from "./routes/admin";
 import { authRouter } from "./routes/auth";
 import { customersRouter } from "./routes/customers";
@@ -20,6 +21,9 @@ app.get("/", (c) => c.json(success({ name: "mi-tienda-api", status: "ok" })));
 app.get("/api/health", (c) =>
   c.json(success({ status: "ok", time: new Date().toISOString() })),
 );
+
+// OpenAPI spec + Swagger UI.
+app.route("/api", openApiRouter);
 
 // Feature routers (all under /api).
 app.route("/api/auth", authRouter);
