@@ -30,9 +30,9 @@
     "semantic_hash": "69be3697c9df7eb3146f9dd6a001c332"
   },
   "package.json": {
-    "mtime": 1781715293.3468173,
-    "ast_hash": "3c44dbf852e3031b063fdcf8e69287b5",
-    "semantic_hash": "3c44dbf852e3031b063fdcf8e69287b5"
+    "mtime": 1781724182.807592,
+    "ast_hash": "e1cfd1bfc26121bb398a724bef8cb6ea",
+    "semantic_hash": ""
   },
   "src/db/index.ts": {
     "mtime": 1781676098.2058878,
@@ -105,9 +105,9 @@
     "semantic_hash": "d9fe4a21536eb47c9b0c34decf3415d0"
   },
   "src/index.ts": {
-    "mtime": 1781677691.2302163,
-    "ast_hash": "782342a47cebf32b2cf990b1cd3247e6",
-    "semantic_hash": "782342a47cebf32b2cf990b1cd3247e6"
+    "mtime": 1781724447.3508897,
+    "ast_hash": "80cc9b6e12ea57e9b7ad16f5a09ad643",
+    "semantic_hash": ""
   },
   "src/lib/crypto.ts": {
     "mtime": 1781676324.4629886,
@@ -487,6 +487,21 @@
   "CLAUDE.md": {
     "mtime": 1781723879.346521,
     "ast_hash": "82efb97a359f5c7290bf2513d14686be",
+    "semantic_hash": ""
+  },
+  "src/openapi/components.ts": {
+    "mtime": 1781724252.1612234,
+    "ast_hash": "18bdaa6c475ff0f06b16b4f799e07e7d",
+    "semantic_hash": ""
+  },
+  "src/openapi/index.ts": {
+    "mtime": 1781724432.6442072,
+    "ast_hash": "b42b1d4ebd4057144cc7c354961a6333",
+    "semantic_hash": ""
+  },
+  "src/openapi/paths.ts": {
+    "mtime": 1781724411.658348,
+    "ast_hash": "03aaf998446b8649da653ff65f8f2ef9",
     "semantic_hash": ""
   }
 }
