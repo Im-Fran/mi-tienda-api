@@ -49,231 +49,6 @@
   },
   "nodes": [
     {
-      "label": "package.json",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L1",
-      "id": "package",
-      "community": 11,
-      "norm_label": "package.json"
-    },
-    {
-      "label": "name",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L2",
-      "id": "package_name",
-      "community": 11,
-      "norm_label": "name"
-    },
-    {
-      "label": "type",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L3",
-      "id": "package_type",
-      "community": 11,
-      "norm_label": "type"
-    },
-    {
-      "label": "scripts",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L4",
-      "id": "package_scripts",
-      "community": 11,
-      "norm_label": "scripts"
-    },
-    {
-      "label": "dev",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L5",
-      "id": "package_scripts_dev",
-      "community": 11,
-      "norm_label": "dev"
-    },
-    {
-      "label": "deploy",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L6",
-      "id": "package_scripts_deploy",
-      "community": 11,
-      "norm_label": "deploy"
-    },
-    {
-      "label": "cf-typegen",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L7",
-      "id": "package_scripts_cf_typegen",
-      "community": 11,
-      "norm_label": "cf-typegen"
-    },
-    {
-      "label": "typecheck",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L8",
-      "id": "package_scripts_typecheck",
-      "community": 11,
-      "norm_label": "typecheck"
-    },
-    {
-      "label": "test",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L9",
-      "id": "package_scripts_test",
-      "community": 11,
-      "norm_label": "test"
-    },
-    {
-      "label": "test:watch",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L10",
-      "id": "package_scripts_test_watch",
-      "community": 11,
-      "norm_label": "test:watch"
-    },
-    {
-      "label": "db:generate",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L11",
-      "id": "package_scripts_db_generate",
-      "community": 11,
-      "norm_label": "db:generate"
-    },
-    {
-      "label": "db:migrate:local",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L12",
-      "id": "package_scripts_db_migrate_local",
-      "community": 11,
-      "norm_label": "db:migrate:local"
-    },
-    {
-      "label": "db:migrate:remote",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L13",
-      "id": "package_scripts_db_migrate_remote",
-      "community": 11,
-      "norm_label": "db:migrate:remote"
-    },
-    {
-      "label": "dependencies",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L15",
-      "id": "package_dependencies",
-      "community": 11,
-      "norm_label": "dependencies"
-    },
-    {
-      "label": "@hono/swagger-ui",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L16",
-      "id": "package_dependencies_hono_swagger_ui",
-      "community": 11,
-      "norm_label": "@hono/swagger-ui"
-    },
-    {
-      "label": "drizzle-orm",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L17",
-      "id": "package_dependencies_drizzle_orm",
-      "community": 11,
-      "norm_label": "drizzle-orm"
-    },
-    {
-      "label": "hono",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L18",
-      "id": "package_dependencies_hono",
-      "community": 11,
-      "norm_label": "hono"
-    },
-    {
-      "label": "zod",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L19",
-      "id": "package_dependencies_zod",
-      "community": 11,
-      "norm_label": "zod"
-    },
-    {
-      "label": "devDependencies",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L21",
-      "id": "package_devdependencies",
-      "community": 11,
-      "norm_label": "devdependencies"
-    },
-    {
-      "label": "@cloudflare/vitest-pool-workers",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L22",
-      "id": "package_devdependencies_cloudflare_vitest_pool_workers",
-      "community": 11,
-      "norm_label": "@cloudflare/vitest-pool-workers"
-    },
-    {
-      "label": "@cloudflare/workers-types",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L23",
-      "id": "package_devdependencies_cloudflare_workers_types",
-      "community": 11,
-      "norm_label": "@cloudflare/workers-types"
-    },
-    {
-      "label": "drizzle-kit",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L24",
-      "id": "package_devdependencies_drizzle_kit",
-      "community": 11,
-      "norm_label": "drizzle-kit"
-    },
-    {
-      "label": "typescript",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L25",
-      "id": "package_devdependencies_typescript",
-      "community": 11,
-      "norm_label": "typescript"
-    },
-    {
-      "label": "vitest",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L26",
-      "id": "package_devdependencies_vitest",
-      "community": 11,
-      "norm_label": "vitest"
-    },
-    {
-      "label": "wrangler",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L27",
-      "id": "package_devdependencies_wrangler",
-      "community": 11,
-      "norm_label": "wrangler"
-    },
-    {
       "label": "index.ts",
       "file_type": "code",
       "source_file": "src/index.ts",
@@ -286,361 +61,802 @@
       "label": "app",
       "file_type": "code",
       "source_file": "src/index.ts",
-      "source_location": "L14",
+      "source_location": "L15",
       "id": "src_index_app",
       "community": 13,
       "norm_label": "app"
+    },
+    {
+      "label": "oauth.ts",
+      "file_type": "code",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L1",
+      "id": "lib_oauth",
+      "community": 0,
+      "norm_label": "oauth.ts"
+    },
+    {
+      "label": "OAuthProvider",
+      "file_type": "code",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L5",
+      "id": "lib_oauth_oauthprovider",
+      "community": 0,
+      "norm_label": "oauthprovider"
+    },
+    {
+      "label": "OAuthSubject",
+      "file_type": "code",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L6",
+      "id": "lib_oauth_oauthsubject",
+      "community": 0,
+      "norm_label": "oauthsubject"
+    },
+    {
+      "label": "OAuthProfile",
+      "file_type": "code",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L8",
+      "id": "lib_oauth_oauthprofile",
+      "community": 0,
+      "norm_label": "oauthprofile"
+    },
+    {
+      "label": "isOAuthProvider()",
+      "file_type": "code",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L15",
+      "id": "lib_oauth_isoauthprovider",
+      "community": 0,
+      "norm_label": "isoauthprovider()"
+    },
+    {
+      "label": "OAuthStatePayload",
+      "file_type": "code",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L21",
+      "id": "lib_oauth_oauthstatepayload",
+      "community": 0,
+      "norm_label": "oauthstatepayload"
+    },
+    {
+      "label": "createOAuthState()",
+      "file_type": "code",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L27",
+      "id": "lib_oauth_createoauthstate",
+      "community": 0,
+      "norm_label": "createoauthstate()"
+    },
+    {
+      "label": "consumeOAuthState()",
+      "file_type": "code",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L38",
+      "id": "lib_oauth_consumeoauthstate",
+      "community": 0,
+      "norm_label": "consumeoauthstate()"
+    },
+    {
+      "label": "getAuthorizeUrl()",
+      "file_type": "code",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L50",
+      "id": "lib_oauth_getauthorizeurl",
+      "community": 0,
+      "norm_label": "getauthorizeurl()"
+    },
+    {
+      "label": "exchangeCodeForToken()",
+      "file_type": "code",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L80",
+      "id": "lib_oauth_exchangecodefortoken",
+      "community": 0,
+      "norm_label": "exchangecodefortoken()"
+    },
+    {
+      "label": "fetchOAuthProfile()",
+      "file_type": "code",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L124",
+      "id": "lib_oauth_fetchoauthprofile",
+      "community": 0,
+      "norm_label": "fetchoauthprofile()"
+    },
+    {
+      "label": "auth-customer.ts",
+      "file_type": "code",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L1",
+      "id": "routes_auth_customer",
+      "community": 0,
+      "norm_label": "auth-customer.ts"
+    },
+    {
+      "label": "authCustomerRouter",
+      "file_type": "code",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L31",
+      "id": "routes_auth_customer_authcustomerrouter",
+      "community": 0,
+      "norm_label": "authcustomerrouter"
+    },
+    {
+      "label": "auth.ts",
+      "file_type": "code",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L1",
+      "id": "routes_auth",
+      "community": 0,
+      "norm_label": "auth.ts"
+    },
+    {
+      "label": "authRouter",
+      "file_type": "code",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L29",
+      "id": "routes_auth_authrouter",
+      "community": 13,
+      "norm_label": "authrouter"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "src/types/index.ts",
+      "source_location": "L1",
+      "id": "types_index",
+      "community": 40,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "Env",
+      "file_type": "code",
+      "source_file": "src/types/index.ts",
+      "source_location": "L5",
+      "id": "types_index_env",
+      "community": 9,
+      "norm_label": "env"
+    },
+    {
+      "label": "UserRow",
+      "file_type": "code",
+      "source_file": "src/types/index.ts",
+      "source_location": "L26",
+      "id": "types_index_userrow",
+      "community": 0,
+      "norm_label": "userrow"
+    },
+    {
+      "label": "CustomerRow",
+      "file_type": "code",
+      "source_file": "src/types/index.ts",
+      "source_location": "L27",
+      "id": "types_index_customerrow",
+      "community": 5,
+      "norm_label": "customerrow"
+    },
+    {
+      "label": "StoreRow",
+      "file_type": "code",
+      "source_file": "src/types/index.ts",
+      "source_location": "L28",
+      "id": "types_index_storerow",
+      "community": 9,
+      "norm_label": "storerow"
+    },
+    {
+      "label": "SessionData",
+      "file_type": "code",
+      "source_file": "src/types/index.ts",
+      "source_location": "L31",
+      "id": "types_index_sessiondata",
+      "community": 0,
+      "norm_label": "sessiondata"
+    },
+    {
+      "label": "CustomerSessionData",
+      "file_type": "code",
+      "source_file": "src/types/index.ts",
+      "source_location": "L37",
+      "id": "types_index_customersessiondata",
+      "community": 0,
+      "norm_label": "customersessiondata"
+    },
+    {
+      "label": "Variables",
+      "file_type": "code",
+      "source_file": "src/types/index.ts",
+      "source_location": "L44",
+      "id": "types_index_variables",
+      "community": 34,
+      "norm_label": "variables"
+    },
+    {
+      "label": "AppEnv",
+      "file_type": "code",
+      "source_file": "src/types/index.ts",
+      "source_location": "L53",
+      "id": "types_index_appenv",
+      "community": 40,
+      "norm_label": "appenv"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "community": 11,
+      "norm_label": "package.json",
+      "id": "package"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "community": 11,
+      "norm_label": "name",
+      "id": "package_name"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "community": 11,
+      "norm_label": "type",
+      "id": "package_type"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "community": 11,
+      "norm_label": "scripts",
+      "id": "package_scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "community": 11,
+      "norm_label": "dev",
+      "id": "package_scripts_dev"
+    },
+    {
+      "label": "deploy",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "community": 11,
+      "norm_label": "deploy",
+      "id": "package_scripts_deploy"
+    },
+    {
+      "label": "cf-typegen",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "community": 11,
+      "norm_label": "cf-typegen",
+      "id": "package_scripts_cf_typegen"
+    },
+    {
+      "label": "typecheck",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "community": 11,
+      "norm_label": "typecheck",
+      "id": "package_scripts_typecheck"
+    },
+    {
+      "label": "test",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "community": 11,
+      "norm_label": "test",
+      "id": "package_scripts_test"
+    },
+    {
+      "label": "test:watch",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "community": 11,
+      "norm_label": "test:watch",
+      "id": "package_scripts_test_watch"
+    },
+    {
+      "label": "db:generate",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "community": 11,
+      "norm_label": "db:generate",
+      "id": "package_scripts_db_generate"
+    },
+    {
+      "label": "db:migrate:local",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "community": 11,
+      "norm_label": "db:migrate:local",
+      "id": "package_scripts_db_migrate_local"
+    },
+    {
+      "label": "db:migrate:remote",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "community": 11,
+      "norm_label": "db:migrate:remote",
+      "id": "package_scripts_db_migrate_remote"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "community": 11,
+      "norm_label": "dependencies",
+      "id": "package_dependencies"
+    },
+    {
+      "label": "@hono/swagger-ui",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "community": 11,
+      "norm_label": "@hono/swagger-ui",
+      "id": "package_dependencies_hono_swagger_ui"
+    },
+    {
+      "label": "drizzle-orm",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "community": 11,
+      "norm_label": "drizzle-orm",
+      "id": "package_dependencies_drizzle_orm"
+    },
+    {
+      "label": "hono",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "community": 11,
+      "norm_label": "hono",
+      "id": "package_dependencies_hono"
+    },
+    {
+      "label": "zod",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "community": 11,
+      "norm_label": "zod",
+      "id": "package_dependencies_zod"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "community": 11,
+      "norm_label": "devdependencies",
+      "id": "package_devdependencies"
+    },
+    {
+      "label": "@cloudflare/vitest-pool-workers",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "community": 11,
+      "norm_label": "@cloudflare/vitest-pool-workers",
+      "id": "package_devdependencies_cloudflare_vitest_pool_workers"
+    },
+    {
+      "label": "@cloudflare/workers-types",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "community": 11,
+      "norm_label": "@cloudflare/workers-types",
+      "id": "package_devdependencies_cloudflare_workers_types"
+    },
+    {
+      "label": "drizzle-kit",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "community": 11,
+      "norm_label": "drizzle-kit",
+      "id": "package_devdependencies_drizzle_kit"
+    },
+    {
+      "label": "typescript",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "community": 11,
+      "norm_label": "typescript",
+      "id": "package_devdependencies_typescript"
+    },
+    {
+      "label": "vitest",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "community": 11,
+      "norm_label": "vitest",
+      "id": "package_devdependencies_vitest"
+    },
+    {
+      "label": "wrangler",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "community": 11,
+      "norm_label": "wrangler",
+      "id": "package_devdependencies_wrangler"
     },
     {
       "label": "components.ts",
       "file_type": "code",
       "source_file": "src/openapi/components.ts",
       "source_location": "L1",
-      "id": "openapi_components",
       "community": 19,
-      "norm_label": "components.ts"
+      "norm_label": "components.ts",
+      "id": "openapi_components"
     },
     {
       "label": "securitySchemes",
       "file_type": "code",
       "source_file": "src/openapi/components.ts",
       "source_location": "L3",
-      "id": "openapi_components_securityschemes",
       "community": 19,
-      "norm_label": "securityschemes"
+      "norm_label": "securityschemes",
+      "id": "openapi_components_securityschemes"
     },
     {
       "label": "schemas",
       "file_type": "code",
       "source_file": "src/openapi/components.ts",
       "source_location": "L20",
-      "id": "openapi_components_schemas",
       "community": 19,
-      "norm_label": "schemas"
+      "norm_label": "schemas",
+      "id": "openapi_components_schemas"
     },
     {
       "label": "parameters",
       "file_type": "code",
       "source_file": "src/openapi/components.ts",
       "source_location": "L600",
-      "id": "openapi_components_parameters",
       "community": 19,
-      "norm_label": "parameters"
+      "norm_label": "parameters",
+      "id": "openapi_components_parameters"
     },
     {
       "label": "responses",
       "file_type": "code",
       "source_file": "src/openapi/components.ts",
       "source_location": "L629",
-      "id": "openapi_components_responses",
       "community": 19,
-      "norm_label": "responses"
+      "norm_label": "responses",
+      "id": "openapi_components_responses"
     },
     {
       "label": "index.ts",
       "file_type": "code",
       "source_file": "src/openapi/index.ts",
       "source_location": "L1",
-      "id": "openapi_index",
       "community": 19,
-      "norm_label": "index.ts"
+      "norm_label": "index.ts",
+      "id": "openapi_index"
     },
     {
       "label": "spec",
       "file_type": "code",
       "source_file": "src/openapi/index.ts",
       "source_location": "L6",
-      "id": "openapi_index_spec",
       "community": 19,
-      "norm_label": "spec"
+      "norm_label": "spec",
+      "id": "openapi_index_spec"
     },
     {
       "label": "openApiRouter",
       "file_type": "code",
       "source_file": "src/openapi/index.ts",
       "source_location": "L70",
-      "id": "openapi_index_openapirouter",
       "community": 19,
-      "norm_label": "openapirouter"
+      "norm_label": "openapirouter",
+      "id": "openapi_index_openapirouter"
     },
     {
       "label": "paths.ts",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1",
-      "id": "openapi_paths",
       "community": 19,
-      "norm_label": "paths.ts"
+      "norm_label": "paths.ts",
+      "id": "openapi_paths"
     },
     {
       "label": "storeIdParam",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L3",
-      "id": "openapi_paths_storeidparam",
       "community": 19,
-      "norm_label": "storeidparam"
+      "norm_label": "storeidparam",
+      "id": "openapi_paths_storeidparam"
     },
     {
       "label": "pageParam",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L4",
-      "id": "openapi_paths_pageparam",
       "community": 19,
-      "norm_label": "pageparam"
+      "norm_label": "pageparam",
+      "id": "openapi_paths_pageparam"
     },
     {
       "label": "perPageParam",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L5",
-      "id": "openapi_paths_perpageparam",
       "community": 19,
-      "norm_label": "perpageparam"
+      "norm_label": "perpageparam",
+      "id": "openapi_paths_perpageparam"
     },
     {
       "label": "r401",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L7",
-      "id": "openapi_paths_r401",
       "community": 19,
-      "norm_label": "r401"
+      "norm_label": "r401",
+      "id": "openapi_paths_r401"
     },
     {
       "label": "r403",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L8",
-      "id": "openapi_paths_r403",
       "community": 19,
-      "norm_label": "r403"
+      "norm_label": "r403",
+      "id": "openapi_paths_r403"
     },
     {
       "label": "r404",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L9",
-      "id": "openapi_paths_r404",
       "community": 19,
-      "norm_label": "r404"
+      "norm_label": "r404",
+      "id": "openapi_paths_r404"
     },
     {
       "label": "r422",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L10",
-      "id": "openapi_paths_r422",
       "community": 19,
-      "norm_label": "r422"
+      "norm_label": "r422",
+      "id": "openapi_paths_r422"
     },
     {
       "label": "r500",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L11",
-      "id": "openapi_paths_r500",
       "community": 19,
-      "norm_label": "r500"
+      "norm_label": "r500",
+      "id": "openapi_paths_r500"
     },
     {
       "label": "jsendSuccess()",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L13",
-      "id": "openapi_paths_jsendsuccess",
       "community": 19,
-      "norm_label": "jsendsuccess()"
+      "norm_label": "jsendsuccess()",
+      "id": "openapi_paths_jsendsuccess"
     },
     {
       "label": "healthPaths",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L33",
-      "id": "openapi_paths_healthpaths",
       "community": 19,
-      "norm_label": "healthpaths"
+      "norm_label": "healthpaths",
+      "id": "openapi_paths_healthpaths"
     },
     {
       "label": "authPaths",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L68",
-      "id": "openapi_paths_authpaths",
       "community": 19,
-      "norm_label": "authpaths"
+      "norm_label": "authpaths",
+      "id": "openapi_paths_authpaths"
     },
     {
       "label": "authCustomerPaths",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L191",
-      "id": "openapi_paths_authcustomerpaths",
       "community": 19,
-      "norm_label": "authcustomerpaths"
+      "norm_label": "authcustomerpaths",
+      "id": "openapi_paths_authcustomerpaths"
     },
     {
       "label": "usersPaths",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L306",
-      "id": "openapi_paths_userspaths",
       "community": 19,
-      "norm_label": "userspaths"
+      "norm_label": "userspaths",
+      "id": "openapi_paths_userspaths"
     },
     {
       "label": "adminPaths",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L355",
-      "id": "openapi_paths_adminpaths",
       "community": 19,
-      "norm_label": "adminpaths"
+      "norm_label": "adminpaths",
+      "id": "openapi_paths_adminpaths"
     },
     {
       "label": "storesPaths",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L498",
-      "id": "openapi_paths_storespaths",
       "community": 19,
-      "norm_label": "storespaths"
+      "norm_label": "storespaths",
+      "id": "openapi_paths_storespaths"
     },
     {
       "label": "productsPaths",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L691",
-      "id": "openapi_paths_productspaths",
       "community": 19,
-      "norm_label": "productspaths"
+      "norm_label": "productspaths",
+      "id": "openapi_paths_productspaths"
     },
     {
       "label": "categoriesPaths",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1010",
-      "id": "openapi_paths_categoriespaths",
       "community": 19,
-      "norm_label": "categoriespaths"
+      "norm_label": "categoriespaths",
+      "id": "openapi_paths_categoriespaths"
     },
     {
       "label": "couponInputSchema",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1117",
-      "id": "openapi_paths_couponinputschema",
       "community": 19,
-      "norm_label": "couponinputschema"
+      "norm_label": "couponinputschema",
+      "id": "openapi_paths_couponinputschema"
     },
     {
       "label": "couponsPaths",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1136",
-      "id": "openapi_paths_couponspaths",
       "community": 19,
-      "norm_label": "couponspaths"
+      "norm_label": "couponspaths",
+      "id": "openapi_paths_couponspaths"
     },
     {
       "label": "cartPaths",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1243",
-      "id": "openapi_paths_cartpaths",
       "community": 19,
-      "norm_label": "cartpaths"
+      "norm_label": "cartpaths",
+      "id": "openapi_paths_cartpaths"
     },
     {
       "label": "cartsAdminPaths",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1454",
-      "id": "openapi_paths_cartsadminpaths",
       "community": 19,
-      "norm_label": "cartsadminpaths"
+      "norm_label": "cartsadminpaths",
+      "id": "openapi_paths_cartsadminpaths"
     },
     {
       "label": "ordersPaths",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1497",
-      "id": "openapi_paths_orderspaths",
       "community": 19,
-      "norm_label": "orderspaths"
+      "norm_label": "orderspaths",
+      "id": "openapi_paths_orderspaths"
     },
     {
       "label": "storeCustomersPaths",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1581",
-      "id": "openapi_paths_storecustomerspaths",
       "community": 19,
-      "norm_label": "storecustomerspaths"
+      "norm_label": "storecustomerspaths",
+      "id": "openapi_paths_storecustomerspaths"
     },
     {
       "label": "customerProfilePaths",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1619",
-      "id": "openapi_paths_customerprofilepaths",
       "community": 19,
-      "norm_label": "customerprofilepaths"
+      "norm_label": "customerprofilepaths",
+      "id": "openapi_paths_customerprofilepaths"
     },
     {
       "label": "paymentMethodInput",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1776",
-      "id": "openapi_paths_paymentmethodinput",
       "community": 19,
-      "norm_label": "paymentmethodinput"
+      "norm_label": "paymentmethodinput",
+      "id": "openapi_paths_paymentmethodinput"
     },
     {
       "label": "paymentsPaths",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1787",
-      "id": "openapi_paths_paymentspaths",
       "community": 19,
-      "norm_label": "paymentspaths"
+      "norm_label": "paymentspaths",
+      "id": "openapi_paths_paymentspaths"
     },
     {
       "label": "shippingMethodInput",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1846",
-      "id": "openapi_paths_shippingmethodinput",
       "community": 19,
-      "norm_label": "shippingmethodinput"
+      "norm_label": "shippingmethodinput",
+      "id": "openapi_paths_shippingmethodinput"
     },
     {
       "label": "shippingPaths",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1859",
-      "id": "openapi_paths_shippingpaths",
       "community": 19,
-      "norm_label": "shippingpaths"
+      "norm_label": "shippingpaths",
+      "id": "openapi_paths_shippingpaths"
     },
     {
       "label": "statsPaths",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1918",
-      "id": "openapi_paths_statspaths",
       "community": 19,
-      "norm_label": "statspaths"
+      "norm_label": "statspaths",
+      "id": "openapi_paths_statspaths"
     },
     {
       "label": "paths",
       "file_type": "code",
       "source_file": "src/openapi/paths.ts",
       "source_location": "L2046",
-      "id": "openapi_paths_paths",
       "community": 19,
-      "norm_label": "paths"
+      "norm_label": "paths",
+      "id": "openapi_paths_paths"
     },
     {
       "label": "settings.json",
@@ -5359,105 +5575,6 @@
       "id": "lib_magic_link_consumemagiclink"
     },
     {
-      "label": "oauth.ts",
-      "file_type": "code",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L1",
-      "community": 0,
-      "norm_label": "oauth.ts",
-      "id": "lib_oauth"
-    },
-    {
-      "label": "OAuthProvider",
-      "file_type": "code",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L5",
-      "community": 0,
-      "norm_label": "oauthprovider",
-      "id": "lib_oauth_oauthprovider"
-    },
-    {
-      "label": "OAuthSubject",
-      "file_type": "code",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L6",
-      "community": 0,
-      "norm_label": "oauthsubject",
-      "id": "lib_oauth_oauthsubject"
-    },
-    {
-      "label": "OAuthProfile",
-      "file_type": "code",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L8",
-      "community": 0,
-      "norm_label": "oauthprofile",
-      "id": "lib_oauth_oauthprofile"
-    },
-    {
-      "label": "isOAuthProvider()",
-      "file_type": "code",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L15",
-      "community": 0,
-      "norm_label": "isoauthprovider()",
-      "id": "lib_oauth_isoauthprovider"
-    },
-    {
-      "label": "OAuthStatePayload",
-      "file_type": "code",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L21",
-      "community": 0,
-      "norm_label": "oauthstatepayload",
-      "id": "lib_oauth_oauthstatepayload"
-    },
-    {
-      "label": "createOAuthState()",
-      "file_type": "code",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L26",
-      "community": 0,
-      "norm_label": "createoauthstate()",
-      "id": "lib_oauth_createoauthstate"
-    },
-    {
-      "label": "consumeOAuthState()",
-      "file_type": "code",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L37",
-      "community": 0,
-      "norm_label": "consumeoauthstate()",
-      "id": "lib_oauth_consumeoauthstate"
-    },
-    {
-      "label": "getAuthorizeUrl()",
-      "file_type": "code",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L49",
-      "community": 0,
-      "norm_label": "getauthorizeurl()",
-      "id": "lib_oauth_getauthorizeurl"
-    },
-    {
-      "label": "exchangeCodeForToken()",
-      "file_type": "code",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L79",
-      "community": 0,
-      "norm_label": "exchangecodefortoken()",
-      "id": "lib_oauth_exchangecodefortoken"
-    },
-    {
-      "label": "fetchOAuthProfile()",
-      "file_type": "code",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L123",
-      "community": 0,
-      "norm_label": "fetchoauthprofile()",
-      "id": "lib_oauth_fetchoauthprofile"
-    },
-    {
       "label": "r2.ts",
       "file_type": "code",
       "source_file": "src/lib/r2.ts",
@@ -5798,42 +5915,6 @@
       "community": 40,
       "norm_label": "adminrouter",
       "id": "routes_admin_adminrouter"
-    },
-    {
-      "label": "auth-customer.ts",
-      "file_type": "code",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L1",
-      "community": 0,
-      "norm_label": "auth-customer.ts",
-      "id": "routes_auth_customer"
-    },
-    {
-      "label": "authCustomerRouter",
-      "file_type": "code",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L31",
-      "community": 0,
-      "norm_label": "authcustomerrouter",
-      "id": "routes_auth_customer_authcustomerrouter"
-    },
-    {
-      "label": "auth.ts",
-      "file_type": "code",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L1",
-      "community": 0,
-      "norm_label": "auth.ts",
-      "id": "routes_auth"
-    },
-    {
-      "label": "authRouter",
-      "file_type": "code",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L29",
-      "community": 13,
-      "norm_label": "authrouter",
-      "id": "routes_auth_authrouter"
     },
     {
       "label": "cart.ts",
@@ -7312,87 +7393,6 @@
       "id": "services_stores_uploadstorelogo"
     },
     {
-      "label": "index.ts",
-      "file_type": "code",
-      "source_file": "src/types/index.ts",
-      "source_location": "L1",
-      "community": 40,
-      "norm_label": "index.ts",
-      "id": "types_index"
-    },
-    {
-      "label": "Env",
-      "file_type": "code",
-      "source_file": "src/types/index.ts",
-      "source_location": "L5",
-      "community": 9,
-      "norm_label": "env",
-      "id": "types_index_env"
-    },
-    {
-      "label": "UserRow",
-      "file_type": "code",
-      "source_file": "src/types/index.ts",
-      "source_location": "L25",
-      "community": 0,
-      "norm_label": "userrow",
-      "id": "types_index_userrow"
-    },
-    {
-      "label": "CustomerRow",
-      "file_type": "code",
-      "source_file": "src/types/index.ts",
-      "source_location": "L26",
-      "community": 5,
-      "norm_label": "customerrow",
-      "id": "types_index_customerrow"
-    },
-    {
-      "label": "StoreRow",
-      "file_type": "code",
-      "source_file": "src/types/index.ts",
-      "source_location": "L27",
-      "community": 9,
-      "norm_label": "storerow",
-      "id": "types_index_storerow"
-    },
-    {
-      "label": "SessionData",
-      "file_type": "code",
-      "source_file": "src/types/index.ts",
-      "source_location": "L30",
-      "community": 0,
-      "norm_label": "sessiondata",
-      "id": "types_index_sessiondata"
-    },
-    {
-      "label": "CustomerSessionData",
-      "file_type": "code",
-      "source_file": "src/types/index.ts",
-      "source_location": "L36",
-      "community": 0,
-      "norm_label": "customersessiondata",
-      "id": "types_index_customersessiondata"
-    },
-    {
-      "label": "Variables",
-      "file_type": "code",
-      "source_file": "src/types/index.ts",
-      "source_location": "L43",
-      "community": 34,
-      "norm_label": "variables",
-      "id": "types_index_variables"
-    },
-    {
-      "label": "AppEnv",
-      "file_type": "code",
-      "source_file": "src/types/index.ts",
-      "source_location": "L52",
-      "community": 40,
-      "norm_label": "appenv",
-      "id": "types_index_appenv"
-    },
-    {
       "label": "admin.ts",
       "file_type": "code",
       "source_file": "src/validators/admin.ts",
@@ -8779,6 +8779,2097 @@
   ],
   "links": [
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "lib_errors"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "lib_errors_apperror"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "lib_jsend"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "lib_jsend_error"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "lib_jsend_fail"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "lib_jsend_success"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "middleware_db"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "middleware_db_dbmiddleware"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "openapi_index"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "openapi_index_openapirouter"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "routes_admin"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "routes_admin_adminrouter"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "routes_auth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "routes_auth_authrouter"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "routes_customers"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "routes_customers_customersrouter"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "routes_stores"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "routes_stores_storesrouter"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "routes_users"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "routes_users_usersrouter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "src_index_app"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_index",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "test/helpers.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "test_helpers",
+      "target": "src_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_oauth",
+      "target": "lib_crypto"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_oauth",
+      "target": "lib_crypto_randomtoken"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_oauth",
+      "target": "lib_errors"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_oauth",
+      "target": "lib_errors_apperror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_oauth",
+      "target": "lib_oauth_consumeoauthstate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_oauth",
+      "target": "lib_oauth_createoauthstate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_oauth",
+      "target": "lib_oauth_exchangecodefortoken"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L123",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_oauth",
+      "target": "lib_oauth_fetchoauthprofile"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_oauth",
+      "target": "lib_oauth_getauthorizeurl"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_oauth",
+      "target": "lib_oauth_isoauthprovider"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_oauth",
+      "target": "lib_oauth_oauthprofile"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_oauth",
+      "target": "lib_oauth_oauthprovider"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_oauth",
+      "target": "lib_oauth_oauthstatepayload"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_oauth",
+      "target": "lib_oauth_oauthsubject"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_oauth",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_oauth",
+      "target": "types_index_env"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_oauth"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_oauth"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/auth.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_auth",
+      "target": "lib_oauth"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "test/auth-oauth.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "test_auth_oauth_test",
+      "target": "lib_oauth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/auth.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_auth",
+      "target": "lib_oauth_oauthprovider"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/auth.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_auth",
+      "target": "lib_oauth_oauthprofile"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/oauth.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "lib_oauth_createoauthstate",
+      "target": "lib_crypto_randomtoken"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_oauth_createoauthstate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_oauth_createoauthstate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "test/auth-oauth.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "test_auth_oauth_test",
+      "target": "lib_oauth_createoauthstate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_oauth_consumeoauthstate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_oauth_consumeoauthstate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_oauth_getauthorizeurl"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_oauth_getauthorizeurl"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_oauth_exchangecodefortoken"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_oauth_exchangecodefortoken"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_oauth_fetchoauthprofile"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_oauth_fetchoauthprofile"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "routes_auth_customer"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_email"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_email_sendmagiclinkemail"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_jsend"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_jsend_fail"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_jsend_success"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_magic_link"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_magic_link_consumemagiclink"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_magic_link_createmagiclink"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_session"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_session_bearertoken"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_session_createcustomersession"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_session_destroycustomersession"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_validation"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_validation_parsejson"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_validation_parseparams"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "lib_validation_parsequery"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "middleware_customer_auth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "middleware_customer_auth_customerauthmiddleware"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "routes_auth_customer_authcustomerrouter"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "services_auth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "services_auth_findorcreatecustomerbyemail"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "services_auth_upsertcustomerfromoauth"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "validators_auth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "validators_auth_emailbodyschema"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "validators_auth_magiclinkverifyqueryschema"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "validators_auth_oauthcallbackqueryschema"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth-customer.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth_customer",
+      "target": "validators_auth_oauthproviderparamschema"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "routes_auth_customer_authcustomerrouter"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_email"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_email_sendmagiclinkemail"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_jsend"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_jsend_fail"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_jsend_success"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_magic_link"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_magic_link_consumemagiclink"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_magic_link_createmagiclink"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_session"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_session_bearertoken"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_session_createusersession"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_session_destroyusersession"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_validation"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_validation_parsejson"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_validation_parseparams"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "lib_validation_parsequery"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "middleware_auth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "middleware_auth_authmiddleware"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "routes_auth_authrouter"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "services_auth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "services_auth_findorcreateuserbyemail"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "services_auth_upsertuserfromoauth"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "validators_auth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "validators_auth_emailbodyschema"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "validators_auth_magiclinkverifyqueryschema"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "validators_auth_oauthcallbackqueryschema"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/auth.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_auth",
+      "target": "validators_auth_oauthproviderparamschema"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/email.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_email",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/r2.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_r2",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/session.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_session",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/middleware/auth.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_auth",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/middleware/customer-auth.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_customer_auth",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/middleware/db.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_db",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/middleware/permissions.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_permissions",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/middleware/store-context.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_store_context",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/admin.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_admin",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/cart.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_cart",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/carts-admin.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_carts_admin",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/categories.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_categories",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/coupons.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_coupons",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/customers.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_customers",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/orders.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_orders",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/payments.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_payments",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/products.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_products",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/shipping.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_shipping",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/stats.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_stats",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/store-customers.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_store_customers",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/stores.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_stores",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/users.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_users",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/auth.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_auth",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/carts.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_carts",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/customers.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_customers",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/products.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_products",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/stores.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_stores",
+      "target": "types_index"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types/index.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "types_index",
+      "target": "db_index"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types/index.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "types_index",
+      "target": "db_index_database"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types/index.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "types_index",
+      "target": "schema_customers_customers"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types/index.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "types_index",
+      "target": "schema_index"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types/index.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "types_index",
+      "target": "schema_stores_stores"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types/index.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "types_index",
+      "target": "schema_users_users"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types/index.ts",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "types_index",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types/index.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "types_index",
+      "target": "types_index_customerrow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types/index.ts",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "types_index",
+      "target": "types_index_customersessiondata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types/index.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "types_index",
+      "target": "types_index_env"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types/index.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "types_index",
+      "target": "types_index_sessiondata"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types/index.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "types_index",
+      "target": "types_index_storerow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types/index.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "types_index",
+      "target": "types_index_userrow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types/index.ts",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "types_index",
+      "target": "types_index_variables"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/email.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_email",
+      "target": "types_index_env"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/r2.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_r2",
+      "target": "types_index_env"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/session.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_session",
+      "target": "types_index_env"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/products.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_products",
+      "target": "types_index_env"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/stores.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_stores",
+      "target": "types_index_env"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/auth.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_auth",
+      "target": "types_index_userrow"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/auth.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_auth",
+      "target": "types_index_customerrow"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/carts.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_carts",
+      "target": "types_index_customerrow"
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/carts.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_carts_cartactor",
+      "target": "types_index_customerrow"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/customers.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_customers",
+      "target": "types_index_customerrow"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/services/stores.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_stores",
+      "target": "types_index_storerow"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/session.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_session",
+      "target": "types_index_sessiondata"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/session.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "lib_session",
+      "target": "types_index_customersessiondata"
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/types/index.ts",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "types_index_variables",
+      "target": "db_index_database"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/middleware/auth.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_auth",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/middleware/customer-auth.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_customer_auth",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/middleware/db.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_db",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/middleware/permissions.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_permissions",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/middleware/store-context.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "middleware_store_context",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/admin.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_admin",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/cart.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_cart",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/carts-admin.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_carts_admin",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/categories.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_categories",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/coupons.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_coupons",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/customers.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_customers",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/orders.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_orders",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/payments.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_payments",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/products.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_products",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/shipping.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_shipping",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/stats.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_stats",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/store-customers.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_store_customers",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/stores.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_stores",
+      "target": "types_index_appenv"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/routes/users.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "routes_users",
+      "target": "types_index_appenv"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
@@ -8944,9 +11035,9 @@
       "source_file": "package.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_dependencies",
-      "target": "package_dependencies_hono_swagger_ui",
-      "confidence_score": 1.0
+      "target": "package_dependencies_hono_swagger_ui"
     },
     {
       "relation": "contains",
@@ -9019,277 +11110,14 @@
       "target": "package_devdependencies_wrangler"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "lib_errors"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "lib_errors_apperror"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "lib_jsend"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "lib_jsend_error"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "lib_jsend_fail"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "lib_jsend_success"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "middleware_db"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "middleware_db_dbmiddleware"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "src_index",
-      "target": "openapi_index",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "src_index",
-      "target": "openapi_index_openapirouter",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "routes_admin"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "routes_admin_adminrouter"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "routes_auth"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "routes_auth_authrouter"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "routes_customers"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "routes_customers_customersrouter"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "routes_stores"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "routes_stores_storesrouter"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "routes_users"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "routes_users_usersrouter"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "src_index_app"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/index.ts",
-      "source_location": "L11",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "src_index",
-      "target": "types_index_appenv"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "test/helpers.ts",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "test_helpers",
-      "target": "src_index"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/openapi/components.ts",
       "source_location": "L600",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_components",
-      "target": "openapi_components_parameters",
-      "confidence_score": 1.0
+      "target": "openapi_components_parameters"
     },
     {
       "relation": "contains",
@@ -9297,9 +11125,9 @@
       "source_file": "src/openapi/components.ts",
       "source_location": "L629",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_components",
-      "target": "openapi_components_responses",
-      "confidence_score": 1.0
+      "target": "openapi_components_responses"
     },
     {
       "relation": "contains",
@@ -9307,9 +11135,9 @@
       "source_file": "src/openapi/components.ts",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_components",
-      "target": "openapi_components_schemas",
-      "confidence_score": 1.0
+      "target": "openapi_components_schemas"
     },
     {
       "relation": "contains",
@@ -9317,9 +11145,9 @@
       "source_file": "src/openapi/components.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_components",
-      "target": "openapi_components_securityschemes",
-      "confidence_score": 1.0
+      "target": "openapi_components_securityschemes"
     },
     {
       "relation": "imports_from",
@@ -9328,9 +11156,9 @@
       "source_file": "src/openapi/index.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_index",
-      "target": "openapi_components",
-      "confidence_score": 1.0
+      "target": "openapi_components"
     },
     {
       "relation": "imports",
@@ -9339,9 +11167,9 @@
       "source_file": "src/openapi/index.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_index",
-      "target": "openapi_components_securityschemes",
-      "confidence_score": 1.0
+      "target": "openapi_components_securityschemes"
     },
     {
       "relation": "imports",
@@ -9350,9 +11178,9 @@
       "source_file": "src/openapi/index.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_index",
-      "target": "openapi_components_schemas",
-      "confidence_score": 1.0
+      "target": "openapi_components_schemas"
     },
     {
       "relation": "imports",
@@ -9361,9 +11189,9 @@
       "source_file": "src/openapi/index.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_index",
-      "target": "openapi_components_parameters",
-      "confidence_score": 1.0
+      "target": "openapi_components_parameters"
     },
     {
       "relation": "imports",
@@ -9372,9 +11200,9 @@
       "source_file": "src/openapi/index.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_index",
-      "target": "openapi_components_responses",
-      "confidence_score": 1.0
+      "target": "openapi_components_responses"
     },
     {
       "relation": "contains",
@@ -9382,9 +11210,9 @@
       "source_file": "src/openapi/index.ts",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_index",
-      "target": "openapi_index_openapirouter",
-      "confidence_score": 1.0
+      "target": "openapi_index_openapirouter"
     },
     {
       "relation": "contains",
@@ -9392,9 +11220,9 @@
       "source_file": "src/openapi/index.ts",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_index",
-      "target": "openapi_index_spec",
-      "confidence_score": 1.0
+      "target": "openapi_index_spec"
     },
     {
       "relation": "imports_from",
@@ -9403,9 +11231,9 @@
       "source_file": "src/openapi/index.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_index",
-      "target": "openapi_paths",
-      "confidence_score": 1.0
+      "target": "openapi_paths"
     },
     {
       "relation": "imports",
@@ -9414,9 +11242,9 @@
       "source_file": "src/openapi/index.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_index",
-      "target": "openapi_paths_paths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_paths"
     },
     {
       "relation": "contains",
@@ -9424,9 +11252,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L355",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_adminpaths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_adminpaths"
     },
     {
       "relation": "contains",
@@ -9434,9 +11262,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L191",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_authcustomerpaths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_authcustomerpaths"
     },
     {
       "relation": "contains",
@@ -9444,9 +11272,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_authpaths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_authpaths"
     },
     {
       "relation": "contains",
@@ -9454,9 +11282,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1243",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_cartpaths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_cartpaths"
     },
     {
       "relation": "contains",
@@ -9464,9 +11292,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1454",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_cartsadminpaths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_cartsadminpaths"
     },
     {
       "relation": "contains",
@@ -9474,9 +11302,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1010",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_categoriespaths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_categoriespaths"
     },
     {
       "relation": "contains",
@@ -9484,9 +11312,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1117",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_couponinputschema",
-      "confidence_score": 1.0
+      "target": "openapi_paths_couponinputschema"
     },
     {
       "relation": "contains",
@@ -9494,9 +11322,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1136",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_couponspaths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_couponspaths"
     },
     {
       "relation": "contains",
@@ -9504,9 +11332,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1619",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_customerprofilepaths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_customerprofilepaths"
     },
     {
       "relation": "contains",
@@ -9514,9 +11342,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_healthpaths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_healthpaths"
     },
     {
       "relation": "contains",
@@ -9524,9 +11352,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_jsendsuccess",
-      "confidence_score": 1.0
+      "target": "openapi_paths_jsendsuccess"
     },
     {
       "relation": "contains",
@@ -9534,9 +11362,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1497",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_orderspaths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_orderspaths"
     },
     {
       "relation": "contains",
@@ -9544,9 +11372,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_pageparam",
-      "confidence_score": 1.0
+      "target": "openapi_paths_pageparam"
     },
     {
       "relation": "contains",
@@ -9554,9 +11382,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L2046",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_paths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_paths"
     },
     {
       "relation": "contains",
@@ -9564,9 +11392,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1776",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_paymentmethodinput",
-      "confidence_score": 1.0
+      "target": "openapi_paths_paymentmethodinput"
     },
     {
       "relation": "contains",
@@ -9574,9 +11402,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1787",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_paymentspaths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_paymentspaths"
     },
     {
       "relation": "contains",
@@ -9584,9 +11412,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_perpageparam",
-      "confidence_score": 1.0
+      "target": "openapi_paths_perpageparam"
     },
     {
       "relation": "contains",
@@ -9594,9 +11422,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L691",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_productspaths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_productspaths"
     },
     {
       "relation": "contains",
@@ -9604,9 +11432,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_r401",
-      "confidence_score": 1.0
+      "target": "openapi_paths_r401"
     },
     {
       "relation": "contains",
@@ -9614,9 +11442,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_r403",
-      "confidence_score": 1.0
+      "target": "openapi_paths_r403"
     },
     {
       "relation": "contains",
@@ -9624,9 +11452,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_r404",
-      "confidence_score": 1.0
+      "target": "openapi_paths_r404"
     },
     {
       "relation": "contains",
@@ -9634,9 +11462,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_r422",
-      "confidence_score": 1.0
+      "target": "openapi_paths_r422"
     },
     {
       "relation": "contains",
@@ -9644,9 +11472,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_r500",
-      "confidence_score": 1.0
+      "target": "openapi_paths_r500"
     },
     {
       "relation": "contains",
@@ -9654,9 +11482,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1846",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_shippingmethodinput",
-      "confidence_score": 1.0
+      "target": "openapi_paths_shippingmethodinput"
     },
     {
       "relation": "contains",
@@ -9664,9 +11492,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1859",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_shippingpaths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_shippingpaths"
     },
     {
       "relation": "contains",
@@ -9674,9 +11502,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1918",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_statspaths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_statspaths"
     },
     {
       "relation": "contains",
@@ -9684,9 +11512,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L1581",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_storecustomerspaths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_storecustomerspaths"
     },
     {
       "relation": "contains",
@@ -9694,9 +11522,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_storeidparam",
-      "confidence_score": 1.0
+      "target": "openapi_paths_storeidparam"
     },
     {
       "relation": "contains",
@@ -9704,9 +11532,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L498",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_storespaths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_storespaths"
     },
     {
       "relation": "contains",
@@ -9714,9 +11542,9 @@
       "source_file": "src/openapi/paths.ts",
       "source_location": "L306",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "openapi_paths",
-      "target": "openapi_paths_userspaths",
-      "confidence_score": 1.0
+      "target": "openapi_paths_userspaths"
     },
     {
       "relation": "contains",
@@ -14067,17 +15895,6 @@
       "target": "db_index"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/types/index.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "types_index",
-      "target": "db_index"
-    },
-    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -14273,28 +16090,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "services_stores",
-      "target": "db_index_database"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/types/index.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "types_index",
-      "target": "db_index_database"
-    },
-    {
-      "relation": "references",
-      "context": "field",
-      "confidence": "EXTRACTED",
-      "source_file": "src/types/index.ts",
-      "source_location": "L44",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "types_index_variables",
       "target": "db_index_database"
     },
     {
@@ -15621,17 +17416,6 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/types/index.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "types_index",
-      "target": "schema_customers_customers"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/db/schema/index.ts",
       "source_location": "L6",
       "weight": 1.0,
@@ -16465,17 +18249,6 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/types/index.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "types_index",
-      "target": "schema_index"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/validators/carts.ts",
       "source_location": "L2",
       "weight": 1.0,
@@ -17283,17 +19056,6 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/types/index.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "types_index",
-      "target": "schema_stores_stores"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/services/checkout.ts",
       "source_location": "L3",
       "weight": 1.0,
@@ -17479,17 +19241,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "test_helpers",
-      "target": "schema_users_users"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/types/index.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "types_index",
       "target": "schema_users_users"
     },
     {
@@ -17689,17 +19440,6 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_oauth",
-      "target": "lib_crypto"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/lib/r2.ts",
       "source_location": "L2",
       "weight": 1.0,
@@ -17804,28 +19544,6 @@
       "source_location": "L15",
       "weight": 1.0,
       "source": "lib_magic_link_generatemagictoken",
-      "target": "lib_crypto_randomtoken"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_oauth",
-      "target": "lib_crypto_randomtoken"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L30",
-      "weight": 1.0,
-      "source": "lib_oauth_createoauthstate",
       "target": "lib_crypto_randomtoken"
     },
     {
@@ -18090,50 +19808,6 @@
       "target": "lib_email_sendviaresend"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/email.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_email",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/email.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_email",
-      "target": "types_index_env"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_email"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_email"
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -18154,28 +19828,6 @@
       "confidence_score": 1.0,
       "source": "lib_email_sendmagiclinkemail",
       "target": "lib_email_sendviaresend"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_email_sendmagiclinkemail"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_email_sendmagiclinkemail"
     },
     {
       "relation": "contains",
@@ -18256,17 +19908,6 @@
       "confidence_score": 1.0,
       "source": "lib_errors",
       "target": "lib_errors_validationerror"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_oauth",
-      "target": "lib_errors"
     },
     {
       "relation": "imports_from",
@@ -18485,17 +20126,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "lib_errors_validationerror",
-      "target": "lib_errors_apperror"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_oauth",
       "target": "lib_errors_apperror"
     },
     {
@@ -19484,28 +21114,6 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_jsend"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_jsend"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/routes/cart.ts",
       "source_location": "L2",
       "weight": 1.0,
@@ -19660,28 +21268,6 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_jsend_success"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_jsend_success"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/routes/cart.ts",
       "source_location": "L2",
       "weight": 1.0,
@@ -19822,28 +21408,6 @@
       "target": "lib_jsend_success"
     },
     {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_jsend_fail"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_jsend_fail"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lib/magic-link.ts",
@@ -19897,28 +21461,6 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_magic_link"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_magic_link"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "test/auth-magic-link.test.ts",
       "source_location": "L4",
       "weight": 1.0,
@@ -19963,365 +21505,12 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_magic_link_createmagiclink"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_magic_link_createmagiclink"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "test/auth-magic-link.test.ts",
       "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "test_auth_magic_link_test",
       "target": "lib_magic_link_createmagiclink"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_magic_link_consumemagiclink"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_magic_link_consumemagiclink"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L37",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_oauth",
-      "target": "lib_oauth_consumeoauthstate"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L26",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_oauth",
-      "target": "lib_oauth_createoauthstate"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L79",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_oauth",
-      "target": "lib_oauth_exchangecodefortoken"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L123",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_oauth",
-      "target": "lib_oauth_fetchoauthprofile"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L49",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_oauth",
-      "target": "lib_oauth_getauthorizeurl"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_oauth",
-      "target": "lib_oauth_isoauthprovider"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_oauth",
-      "target": "lib_oauth_oauthprofile"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_oauth",
-      "target": "lib_oauth_oauthprovider"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_oauth",
-      "target": "lib_oauth_oauthstatepayload"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_oauth",
-      "target": "lib_oauth_oauthsubject"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_oauth",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/oauth.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_oauth",
-      "target": "types_index_env"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_oauth"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_oauth"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/auth.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_auth",
-      "target": "lib_oauth"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "test/auth-oauth.test.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "test_auth_oauth_test",
-      "target": "lib_oauth"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/auth.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_auth",
-      "target": "lib_oauth_oauthprovider"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/auth.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_auth",
-      "target": "lib_oauth_oauthprofile"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_oauth_createoauthstate"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_oauth_createoauthstate"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "test/auth-oauth.test.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "test_auth_oauth_test",
-      "target": "lib_oauth_createoauthstate"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_oauth_consumeoauthstate"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_oauth_consumeoauthstate"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_oauth_getauthorizeurl"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_oauth_getauthorizeurl"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_oauth_exchangecodefortoken"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_oauth_exchangecodefortoken"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_oauth_fetchoauthprofile"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_oauth_fetchoauthprofile"
     },
     {
       "relation": "contains",
@@ -20372,28 +21561,6 @@
       "confidence_score": 1.0,
       "source": "lib_r2",
       "target": "lib_r2_uploadfile"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/r2.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_r2",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/r2.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_r2",
-      "target": "types_index_env"
     },
     {
       "relation": "imports_from",
@@ -20644,50 +21811,6 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/lib/session.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_session",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/session.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_session",
-      "target": "types_index_customersessiondata"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/session.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_session",
-      "target": "types_index_env"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/lib/session.ts",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "lib_session",
-      "target": "types_index_sessiondata"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/middleware/auth.ts",
       "source_location": "L5",
       "weight": 1.0,
@@ -20704,28 +21827,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "middleware_customer_auth",
-      "target": "lib_session"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_session"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
       "target": "lib_session"
     },
     {
@@ -20842,17 +21943,6 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_session_createusersession"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "test/helpers.ts",
       "source_location": "L12",
       "weight": 1.0,
@@ -20908,34 +21998,12 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_session_destroyusersession"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/routes/users.ts",
       "source_location": "L5",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "routes_users",
       "target": "lib_session_destroyusersession"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_session_createcustomersession"
     },
     {
       "relation": "imports",
@@ -20974,17 +22042,6 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_session_destroycustomersession"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/middleware/auth.ts",
       "source_location": "L5",
       "weight": 1.0,
@@ -21001,28 +22058,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "middleware_customer_auth",
-      "target": "lib_session_bearertoken"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_session_bearertoken"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
       "target": "lib_session_bearertoken"
     },
     {
@@ -21166,28 +22201,6 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_validation"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_validation"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/routes/cart.ts",
       "source_location": "L3",
       "weight": 1.0,
@@ -21342,28 +22355,6 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_validation_parsejson"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_validation_parsejson"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/routes/cart.ts",
       "source_location": "L3",
       "weight": 1.0,
@@ -21485,28 +22476,6 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_validation_parsequery"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "lib_validation_parsequery"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/routes/carts-admin.ts",
       "source_location": "L5",
       "weight": 1.0,
@@ -21589,28 +22558,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "routes_admin",
-      "target": "lib_validation_parseparams"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "lib_validation_parseparams"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
       "target": "lib_validation_parseparams"
     },
     {
@@ -21726,44 +22673,11 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/middleware/auth.ts",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "middleware_auth",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/middleware/auth.ts",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "middleware_auth",
-      "target": "types_index_appenv"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/routes/admin.ts",
       "source_location": "L4",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "routes_admin",
-      "target": "middleware_auth"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L18",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
       "target": "middleware_auth"
     },
     {
@@ -21896,17 +22810,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "routes_admin",
-      "target": "middleware_auth_authmiddleware"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L18",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
       "target": "middleware_auth_authmiddleware"
     },
     {
@@ -22054,39 +22957,6 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/middleware/customer-auth.ts",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "middleware_customer_auth",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/middleware/customer-auth.ts",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "middleware_customer_auth",
-      "target": "types_index_appenv"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L18",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "middleware_customer_auth"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/routes/cart.ts",
       "source_location": "L4",
       "weight": 1.0,
@@ -22104,17 +22974,6 @@
       "confidence_score": 1.0,
       "source": "routes_customers",
       "target": "middleware_customer_auth"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L18",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "middleware_customer_auth_customerauthmiddleware"
     },
     {
       "relation": "imports",
@@ -22149,28 +23008,6 @@
       "target": "middleware_db_dbmiddleware"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/middleware/db.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "middleware_db",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/middleware/db.ts",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "middleware_db",
-      "target": "types_index_appenv"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/middleware/permissions.ts",
@@ -22201,28 +23038,6 @@
       "confidence_score": 1.0,
       "source": "middleware_permissions",
       "target": "services_permissions_userhaspermission"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/middleware/permissions.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "middleware_permissions",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/middleware/permissions.ts",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "middleware_permissions",
-      "target": "types_index_appenv"
     },
     {
       "relation": "imports_from",
@@ -22297,28 +23112,6 @@
       "confidence_score": 1.0,
       "source": "middleware_store_context",
       "target": "services_permissions_userhasanyrole"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/middleware/store-context.ts",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "middleware_store_context",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/middleware/store-context.ts",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "middleware_store_context",
-      "target": "types_index_appenv"
     },
     {
       "relation": "imports_from",
@@ -22599,28 +23392,6 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/routes/admin.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_admin",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/admin.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_admin",
-      "target": "types_index_appenv"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/admin.ts",
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -22681,268 +23452,6 @@
       "confidence_score": 1.0,
       "source": "routes_admin",
       "target": "validators_common_paginationqueryschema"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L27",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "routes_auth_customer"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L31",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "routes_auth_customer_authcustomerrouter"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "services_auth"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "services_auth_findorcreatecustomerbyemail"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "services_auth_upsertcustomerfromoauth"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L23",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L23",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "types_index_appenv"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "validators_auth"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "validators_auth_emailbodyschema"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "validators_auth_magiclinkverifyqueryschema"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "validators_auth_oauthcallbackqueryschema"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth-customer.ts",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth_customer",
-      "target": "validators_auth_oauthproviderparamschema"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L27",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "routes_auth_customer_authcustomerrouter"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L29",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "routes_auth_authrouter"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "services_auth"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "services_auth_findorcreateuserbyemail"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "services_auth_upsertuserfromoauth"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "types_index_appenv"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "validators_auth"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "validators_auth_emailbodyschema"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "validators_auth_magiclinkverifyqueryschema"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "validators_auth_oauthcallbackqueryschema"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/auth.ts",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_auth",
-      "target": "validators_auth_oauthproviderparamschema"
     },
     {
       "relation": "contains",
@@ -23007,28 +23516,6 @@
       "confidence_score": 1.0,
       "source": "routes_cart",
       "target": "services_checkout_checkout"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/cart.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_cart",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/cart.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_cart",
-      "target": "types_index_appenv"
     },
     {
       "relation": "imports_from",
@@ -23143,28 +23630,6 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/routes/carts-admin.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_carts_admin",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/carts-admin.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_carts_admin",
-      "target": "types_index_appenv"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/carts-admin.ts",
       "source_location": "L10",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -23235,28 +23700,6 @@
       "confidence_score": 1.0,
       "source": "routes_categories",
       "target": "services_categories"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/categories.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_categories",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/categories.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_categories",
-      "target": "types_index_appenv"
     },
     {
       "relation": "imports_from",
@@ -23416,28 +23859,6 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/routes/coupons.ts",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_coupons",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/coupons.ts",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_coupons",
-      "target": "types_index_appenv"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/coupons.ts",
       "source_location": "L13",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -23568,28 +23989,6 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/routes/customers.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_customers",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/customers.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_customers",
-      "target": "types_index_appenv"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/customers.ts",
       "source_location": "L13",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -23682,28 +24081,6 @@
       "confidence_score": 1.0,
       "source": "routes_orders",
       "target": "services_orders"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/orders.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_orders",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/orders.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_orders",
-      "target": "types_index_appenv"
     },
     {
       "relation": "imports_from",
@@ -23808,28 +24185,6 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/routes/payments.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_payments",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/payments.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_payments",
-      "target": "types_index_appenv"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/payments.ts",
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -23922,28 +24277,6 @@
       "confidence_score": 1.0,
       "source": "routes_products",
       "target": "services_products"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/products.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_products",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/products.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_products",
-      "target": "types_index_appenv"
     },
     {
       "relation": "imports_from",
@@ -24081,28 +24414,6 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/routes/shipping.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_shipping",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/shipping.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_shipping",
-      "target": "types_index_appenv"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/shipping.ts",
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -24201,28 +24512,6 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/routes/stats.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_stats",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/stats.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_stats",
-      "target": "types_index_appenv"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/stats.ts",
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -24310,28 +24599,6 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/routes/store-customers.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_store_customers",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/store-customers.ts",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_store_customers",
-      "target": "types_index_appenv"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/store-customers.ts",
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -24408,28 +24675,6 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/routes/stores.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_stores",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/stores.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_stores",
-      "target": "types_index_appenv"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/stores.ts",
       "source_location": "L10",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -24500,28 +24745,6 @@
       "confidence_score": 1.0,
       "source": "routes_users",
       "target": "services_stores_deletestore"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/users.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_users",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/routes/users.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "routes_users",
-      "target": "types_index_appenv"
     },
     {
       "relation": "imports_from",
@@ -24709,39 +24932,6 @@
       "confidence_score": 1.0,
       "source": "services_auth",
       "target": "services_auth_upsertuserfromoauth"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/auth.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_auth",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/auth.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_auth",
-      "target": "types_index_customerrow"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/auth.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_auth",
-      "target": "types_index_userrow"
     },
     {
       "relation": "imports_from",
@@ -24981,45 +25171,12 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/services/carts.ts",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_carts",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/carts.ts",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_carts",
-      "target": "types_index_customerrow"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/services/checkout.ts",
       "source_location": "L19",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "services_checkout",
       "target": "services_carts"
-    },
-    {
-      "relation": "references",
-      "context": "field",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/carts.ts",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_carts_cartactor",
-      "target": "types_index_customerrow"
     },
     {
       "relation": "imports",
@@ -26054,28 +26211,6 @@
       "target": "services_customers_updatecustomer"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/customers.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_customers",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/customers.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_customers",
-      "target": "types_index_customerrow"
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -26491,28 +26626,6 @@
       "confidence_score": 1.0,
       "source": "services_products",
       "target": "services_products_variantinput"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/products.ts",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_products",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/products.ts",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_products",
-      "target": "types_index_env"
     },
     {
       "relation": "calls",
@@ -26945,39 +27058,6 @@
       "target": "services_stores_uploadstorelogo"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/stores.ts",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_stores",
-      "target": "types_index"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/stores.ts",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_stores",
-      "target": "types_index_env"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/services/stores.ts",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_stores",
-      "target": "types_index_storerow"
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -27042,86 +27122,6 @@
       "confidence_score": 1.0,
       "source": "services_stores_updatestoresettings",
       "target": "services_stores_getstoresettings"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/types/index.ts",
-      "source_location": "L52",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "types_index",
-      "target": "types_index_appenv"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/types/index.ts",
-      "source_location": "L26",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "types_index",
-      "target": "types_index_customerrow"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/types/index.ts",
-      "source_location": "L36",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "types_index",
-      "target": "types_index_customersessiondata"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/types/index.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "types_index",
-      "target": "types_index_env"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/types/index.ts",
-      "source_location": "L30",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "types_index",
-      "target": "types_index_sessiondata"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/types/index.ts",
-      "source_location": "L27",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "types_index",
-      "target": "types_index_storerow"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/types/index.ts",
-      "source_location": "L25",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "types_index",
-      "target": "types_index_userrow"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/types/index.ts",
-      "source_location": "L43",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "types_index",
-      "target": "types_index_variables"
     },
     {
       "relation": "contains",
@@ -28960,5 +28960,5 @@
       "source_file": "README.md"
     }
   ],
-  "built_at_commit": "7f59ac6811d678514286b7476d03267989a3281c"
+  "built_at_commit": "df3b98c69cbc9bca55d447cd53dbb5cab37f4d61"
 }
