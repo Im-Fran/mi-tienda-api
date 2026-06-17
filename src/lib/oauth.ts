@@ -21,6 +21,7 @@ export function isOAuthProvider(value: string): value is OAuthProvider {
 interface OAuthStatePayload {
   provider: OAuthProvider;
   subjectType: OAuthSubject;
+  storeSlug?: string;
 }
 
 export async function createOAuthState(

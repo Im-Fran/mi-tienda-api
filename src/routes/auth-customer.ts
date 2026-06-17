@@ -32,10 +32,12 @@ export const authCustomerRouter = new Hono<AppEnv>();
 
 authCustomerRouter.get("/oauth/:provider", async (c) => {
   const { provider } = parseParams(c, oauthProviderParamSchema);
+  const storeSlug = c.req.query("store_slug") ?? undefined;
   const redirectUri = `${c.env.OAUTH_REDIRECT_BASE}/api/auth/customer/oauth/${provider}/callback`;
   const state = await createOAuthState(c.env.KV_CUSTOMER_SESSIONS, {
     provider,
     subjectType: "customer",
+    storeSlug,
   });
   return c.redirect(getAuthorizeUrl(c.env, provider, redirectUri, state));
 });
@@ -57,7 +59,11 @@ authCustomerRouter.get("/oauth/:provider/callback", async (c) => {
   const profile = await fetchOAuthProfile(provider, accessToken);
   const customer = await upsertCustomerFromOAuth(c.var.db, provider, profile);
   const token = await createCustomerSession(c.env, customer.id);
-  return c.json(success({ token, customer }));
+  const { storeSlug } = saved;
+  const destination = storeSlug
+    ? `${c.env.FRONTEND_URL}/store/${storeSlug}/login?oauth_token=${encodeURIComponent(token)}`
+    : `${c.env.FRONTEND_URL}?oauth_token=${encodeURIComponent(token)}`;
+  return c.redirect(destination);
 });
 
 authCustomerRouter.post("/magic-link", async (c) => {

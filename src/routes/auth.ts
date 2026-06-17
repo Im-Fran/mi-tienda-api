@@ -58,13 +58,13 @@ authRouter.get("/oauth/:provider/callback", async (c) => {
   const profile = await fetchOAuthProfile(provider, accessToken);
   const user = await upsertUserFromOAuth(c.var.db, provider, profile);
   const token = await createUserSession(c.env, user.id);
-  return c.json(success({ token, user }));
+  return c.redirect(`${c.env.FRONTEND_URL}/admin/login?oauth_token=${encodeURIComponent(token)}`);
 });
 
 authRouter.post("/magic-link", async (c) => {
   const { email } = await parseJson(c, emailBodySchema);
   const rawToken = await createMagicLink(c.var.db, email, "user");
-  const link = `${c.env.BASE_URL}/api/auth/magic-link/verify?token=${encodeURIComponent(
+  const link = `${c.env.FRONTEND_URL}/admin/login?token=${encodeURIComponent(
     rawToken,
   )}&email=${encodeURIComponent(email)}`;
   try {

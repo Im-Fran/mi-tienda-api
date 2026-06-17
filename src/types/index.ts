@@ -14,6 +14,7 @@ export interface Env {
   EMAIL_FROM: string;
   EMAIL_PROVIDER: string;
   OAUTH_REDIRECT_BASE: string;
+  FRONTEND_URL: string;
   // Secrets (wrangler secret put / .dev.vars)
   GOOGLE_CLIENT_ID: string;
   GOOGLE_CLIENT_SECRET: string;
