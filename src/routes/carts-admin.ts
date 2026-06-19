@@ -18,8 +18,17 @@ cartsAdminRouter.get("/", async (c) => {
   const { page, perPage } = parseQuery(c, paginationQuerySchema);
   const parsedStatus = statusSchema.safeParse(c.req.query("status"));
   const status = parsedStatus.success ? parsedStatus.data : undefined;
+  const result = await svc.listCarts(c.var.db, c.var.store.id, status, page, perPage);
   return c.json(
-    success(await svc.listCarts(c.var.db, c.var.store.id, status, page, perPage)),
+    success({
+      carts: result.items,
+      pagination: {
+        page: result.page,
+        perPage: result.perPage,
+        total: result.total,
+        totalPages: Math.ceil(result.total / result.perPage),
+      },
+    }),
   );
 });
 

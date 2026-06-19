@@ -34,22 +34,31 @@ describe("oauth auth", () => {
     expect(await env.KV_SESSIONS.get(`oauth_state:${state}`)).toBeTruthy();
   });
 
-  it("handles the callback: creates the user and issues a session", async () => {
+  it("handles the callback: creates the user and redirects with oauth_token", async () => {
     const state = await createOAuthState(env.KV_SESSIONS, {
       provider: "google",
       subjectType: "user",
     });
     stubOAuthFetch({ id: "g-123", email: "oauth@test.dev", name: "OAuth User" });
 
+    // The callback redirects to the frontend with oauth_token in the query string.
     const res = await api(`/api/auth/oauth/google/callback?code=abc&state=${state}`);
-    expect(res.status).toBe(200);
-    expect(res.json.data.token).toBeTruthy();
+    expect(res.status).toBe(302);
 
+    const location = res.res.headers.get("location") ?? "";
+    expect(location).toContain("oauth_token=");
+
+    const token = new URL(location).searchParams.get("oauth_token") ?? "";
+    expect(token).toBeTruthy();
+
+    // User must be created in the DB.
     const user = await db().query.users.findFirst({
       where: eq(users.email, "oauth@test.dev"),
     });
     expect(user?.provider).toBe("google");
-    const session = await getUserSession(env, res.json.data.token);
+
+    // Session must be valid.
+    const session = await getUserSession(env, token);
     expect(session?.userId).toBe(user!.id);
   });
 

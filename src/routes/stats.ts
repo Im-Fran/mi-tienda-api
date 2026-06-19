@@ -21,23 +21,18 @@ statsRouter.get("/summary", async (c) => {
 
 statsRouter.get("/top-products", async (c) => {
   const { from, to, limit } = parseQuery(c, topProductsSchema);
-  return c.json(
-    success(await svc.topProducts(c.var.db, c.var.store.id, limit, from, to)),
-  );
+  const products = await svc.topProducts(c.var.db, c.var.store.id, limit, from, to);
+  return c.json(success({ products }));
 });
 
 statsRouter.get("/orders-by-status", async (c) => {
   const { from, to } = parseQuery(c, statsRangeSchema);
-  return c.json(
-    success(await svc.ordersByStatus(c.var.db, c.var.store.id, from, to)),
-  );
+  const data = await svc.ordersByStatus(c.var.db, c.var.store.id, from, to);
+  return c.json(success({ data }));
 });
 
 statsRouter.get("/revenue-over-time", async (c) => {
   const { from, to, interval } = parseQuery(c, revenueOverTimeSchema);
-  return c.json(
-    success(
-      await svc.revenueOverTime(c.var.db, c.var.store.id, interval, from, to),
-    ),
-  );
+  const data = await svc.revenueOverTime(c.var.db, c.var.store.id, interval, from, to);
+  return c.json(success({ data }));
 });
