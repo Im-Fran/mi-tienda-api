@@ -8,7 +8,6 @@ import {
   api,
   authUser,
   createPaymentMethodRow,
-  createProductWithVariant,
   createStore,
   db,
 } from "./helpers";

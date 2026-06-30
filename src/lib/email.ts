@@ -6,7 +6,7 @@ export async function sendMagicLinkEmail(
   email: string,
   link: string,
 ): Promise<void> {
-  const subject = "Your miTienda sign-in link";
+  const subject = "Your Mi Tienda sign-in link";
   const html = magicLinkTemplate(link);
 
   if (env.EMAIL_PROVIDER === "resend" && env.RESEND_API_KEY) {
@@ -44,7 +44,7 @@ function magicLinkTemplate(link: string): string {
   <body style="margin:0;padding:24px;background:#f4f4f5;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#18181b;">
     <table role="presentation" width="100%" style="max-width:480px;margin:0 auto;background:#ffffff;border-radius:12px;overflow:hidden;">
       <tr><td style="padding:32px;">
-        <h1 style="margin:0 0 12px;font-size:20px;">Sign in to miTienda</h1>
+        <h1 style="margin:0 0 12px;font-size:20px;">Sign in to Mi Tienda</h1>
         <p style="margin:0 0 24px;font-size:14px;line-height:1.5;color:#52525b;">
           Click the button below to sign in. This link expires in 15 minutes and can only be used once.
         </p>
