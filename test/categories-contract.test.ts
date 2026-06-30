@@ -135,3 +135,93 @@ describe("categories – list contract", () => {
     expect(recursiveRes.status).toBe(200);
   });
 });
+
+describe("categories – slug editing", () => {
+  it("PATCH with explicit slug updates it correctly", async () => {
+    const { user, token } = await authUser();
+    const store = await createStore(user.id);
+
+    const createRes = await api(`/api/stores/${store.id}/categories`, {
+      method: "POST",
+      token,
+      body: { name: "Ropa" },
+    });
+    expect(createRes.status).toBe(201);
+    const catId = createRes.json.data.category.id;
+
+    const patchRes = await api(
+      `/api/stores/${store.id}/categories/${catId}`,
+      { method: "PATCH", token, body: { slug: "nuevo-slug" } },
+    );
+    expect(patchRes.status).toBe(200);
+    expect(patchRes.json.data.category.slug).toBe("nuevo-slug");
+  });
+
+  it("PATCH with the same slug the category already has does not fail", async () => {
+    const { user, token } = await authUser();
+    const store = await createStore(user.id);
+
+    const createRes = await api(`/api/stores/${store.id}/categories`, {
+      method: "POST",
+      token,
+      body: { name: "Calzado" },
+    });
+    expect(createRes.status).toBe(201);
+    const catId = createRes.json.data.category.id;
+    const currentSlug = createRes.json.data.category.slug;
+
+    const patchRes = await api(
+      `/api/stores/${store.id}/categories/${catId}`,
+      { method: "PATCH", token, body: { slug: currentSlug } },
+    );
+    expect(patchRes.status).toBe(200);
+    expect(patchRes.json.data.category.slug).toBe(currentSlug);
+  });
+
+  it("PATCH with a slug already used by another category in the same store returns a suffixed slug", async () => {
+    const { user, token } = await authUser();
+    const store = await createStore(user.id);
+
+    const firstRes = await api(`/api/stores/${store.id}/categories`, {
+      method: "POST",
+      token,
+      body: { name: "Ropa", slug: "ropa" },
+    });
+    expect(firstRes.status).toBe(201);
+
+    const secondRes = await api(`/api/stores/${store.id}/categories`, {
+      method: "POST",
+      token,
+      body: { name: "Ropa Nueva" },
+    });
+    expect(secondRes.status).toBe(201);
+    const secondId = secondRes.json.data.category.id;
+
+    const patchRes = await api(
+      `/api/stores/${store.id}/categories/${secondId}`,
+      { method: "PATCH", token, body: { slug: "ropa" } },
+    );
+    expect(patchRes.status).toBe(200);
+    expect(patchRes.json.data.category.slug).toMatch(/^ropa-\d+$/);
+  });
+
+  it("PATCH with an invalid slug returns 400", async () => {
+    const { user, token } = await authUser();
+    const store = await createStore(user.id);
+
+    const createRes = await api(`/api/stores/${store.id}/categories`, {
+      method: "POST",
+      token,
+      body: { name: "Electrodomésticos" },
+    });
+    expect(createRes.status).toBe(201);
+    const catId = createRes.json.data.category.id;
+
+    const patchRes = await api(
+      `/api/stores/${store.id}/categories/${catId}`,
+      { method: "PATCH", token, body: { slug: "Slug Con Mayúsculas!" } },
+    );
+    // Hono + Zod devuelve 422 Unprocessable Entity para errores de validación de esquema
+    expect(patchRes.status).toBe(422);
+  });
+});
