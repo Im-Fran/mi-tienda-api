@@ -13,7 +13,7 @@
   "vars": {
     "BASE_URL": "http://localhost:8787",
     "R2_PUBLIC_URL": "https://assets-mitienda-dev.franciscosolis.cl",
-    "EMAIL_FROM": "miTienda <mitienda-noreply@franciscosolis.cl>",
+    "EMAIL_FROM": "Mi Tienda <mitienda-noreply@franciscosolis.cl>",
     "EMAIL_PROVIDER": "resend",
     "OAUTH_REDIRECT_BASE": "http://localhost:8787",
     "FRONTEND_URL": "http://localhost:5173"
@@ -47,7 +47,7 @@
       "vars": {
         "BASE_URL": "https://api-mitienda.franciscosolis.cl",
         "R2_PUBLIC_URL": "https://assets-mitienda.franciscosolis.cl",
-        "EMAIL_FROM": "miTienda <mitienda-noreply@franciscosolis.cl>",
+        "EMAIL_FROM": "Mi Tienda <mitienda-noreply@franciscosolis.cl>",
         "EMAIL_PROVIDER": "resend",
         "OAUTH_REDIRECT_BASE": "https://api-mitienda.franciscosolis.cl",
         "FRONTEND_URL": "https://mitienda.franciscosolis.cl"

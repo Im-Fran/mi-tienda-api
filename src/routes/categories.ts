@@ -16,7 +16,7 @@ export const categoriesRouter = new Hono<AppEnv>();
 categoriesRouter.use(authMiddleware, storeContextMiddleware);
 
 categoriesRouter.get("/", async (c) =>
-  c.json(success(await svc.getCategoryTree(c.var.db, c.var.store.id))),
+  c.json(success({ categories: await svc.getCategoryTree(c.var.db, c.var.store.id) })),
 );
 
 categoriesRouter.post("/", async (c) => {

@@ -16,7 +16,18 @@ ordersRouter.use(authMiddleware, storeContextMiddleware);
 
 ordersRouter.get("/", async (c) => {
   const filters = parseQuery(c, orderFiltersSchema);
-  return c.json(success(await svc.listOrders(c.var.db, c.var.store.id, filters)));
+  const result = await svc.listOrders(c.var.db, c.var.store.id, filters);
+  return c.json(
+    success({
+      orders: result.items,
+      pagination: {
+        page: result.page,
+        perPage: result.perPage,
+        total: result.total,
+        totalPages: Math.ceil(result.total / result.perPage),
+      },
+    }),
+  );
 });
 
 ordersRouter.get("/:id", async (c) => {

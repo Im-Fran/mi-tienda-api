@@ -996,23 +996,11 @@
       "services_permission_seed_permissions",
       "services_permission_seed_role_definitions"
     ],
-    "46": [
-      "test_env_d",
-      "test_env_d_d1migration"
-    ],
-    "47": [
-      "vitest_config",
-      "vitest_config_findmigrationsdir"
-    ],
-    "48": [
-      "drizzle_config"
-    ],
-    "49": [
-      "readme_src_routes"
-    ],
-    "50": [
-      "test_apply_migrations"
-    ]
+    "46": ["test_env_d", "test_env_d_d1migration"],
+    "47": ["vitest_config", "vitest_config_findmigrationsdir"],
+    "48": ["drizzle_config"],
+    "49": ["readme_src_routes"],
+    "50": ["test_apply_migrations"]
   },
   "cohesion": {
     "0": 0.054901960784313725,
@@ -1080,7 +1068,7 @@
     },
     {
       "id": "readme_mitienda_api",
-      "label": "miTienda API",
+      "label": "Mi Tienda API",
       "degree": 20
     },
     {
@@ -1123,10 +1111,7 @@
     {
       "source": "db()",
       "target": "createDb()",
-      "source_files": [
-        "test/helpers.ts",
-        "src/db/index.ts"
-      ],
+      "source_files": ["test/helpers.ts", "src/db/index.ts"],
       "confidence": "EXTRACTED",
       "relation": "calls",
       "why": "connects across different repos/directories"
@@ -1134,10 +1119,7 @@
     {
       "source": "removePermissionFromRole()",
       "target": "notFound()",
-      "source_files": [
-        "src/services/admin.ts",
-        "src/lib/errors.ts"
-      ],
+      "source_files": ["src/services/admin.ts", "src/lib/errors.ts"],
       "confidence": "EXTRACTED",
       "relation": "calls",
       "why": "bridges separate communities; peripheral node `removePermissionFromRole()` unexpectedly reaches hub `notFound()`"
@@ -1145,10 +1127,7 @@
     {
       "source": "deleteCoupon()",
       "target": "notFound()",
-      "source_files": [
-        "src/services/coupons.ts",
-        "src/lib/errors.ts"
-      ],
+      "source_files": ["src/services/coupons.ts", "src/lib/errors.ts"],
       "confidence": "EXTRACTED",
       "relation": "calls",
       "why": "bridges separate communities; peripheral node `deleteCoupon()` unexpectedly reaches hub `notFound()`"
@@ -1156,10 +1135,7 @@
     {
       "source": "deletePaymentMethod()",
       "target": "notFound()",
-      "source_files": [
-        "src/services/payments.ts",
-        "src/lib/errors.ts"
-      ],
+      "source_files": ["src/services/payments.ts", "src/lib/errors.ts"],
       "confidence": "EXTRACTED",
       "relation": "calls",
       "why": "bridges separate communities; peripheral node `deletePaymentMethod()` unexpectedly reaches hub `notFound()`"
@@ -1167,10 +1143,7 @@
     {
       "source": "updatePaymentMethod()",
       "target": "notFound()",
-      "source_files": [
-        "src/services/payments.ts",
-        "src/lib/errors.ts"
-      ],
+      "source_files": ["src/services/payments.ts", "src/lib/errors.ts"],
       "confidence": "EXTRACTED",
       "relation": "calls",
       "why": "bridges separate communities; peripheral node `updatePaymentMethod()` unexpectedly reaches hub `notFound()`"

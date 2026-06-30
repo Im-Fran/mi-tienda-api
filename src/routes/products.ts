@@ -21,7 +21,18 @@ productsRouter.use(authMiddleware, storeContextMiddleware);
 
 productsRouter.get("/", async (c) => {
   const filters = parseQuery(c, productFiltersSchema);
-  return c.json(success(await svc.listProducts(c.var.db, c.var.store.id, filters)));
+  const result = await svc.listProducts(c.var.db, c.var.store.id, filters);
+  return c.json(
+    success({
+      products: result.items,
+      pagination: {
+        page: result.page,
+        perPage: result.perPage,
+        total: result.total,
+        totalPages: Math.ceil(result.total / result.perPage),
+      },
+    }),
+  );
 });
 
 productsRouter.post("/", async (c) => {

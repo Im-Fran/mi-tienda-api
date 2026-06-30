@@ -30,9 +30,9 @@
     "semantic_hash": "69be3697c9df7eb3146f9dd6a001c332"
   },
   "package.json": {
-    "mtime": 1782848020.219539,
-    "ast_hash": "9b102c9d998a3668aff897c338704383",
-    "semantic_hash": ""
+    "mtime": 1781724182.807592,
+    "ast_hash": "e1cfd1bfc26121bb398a724bef8cb6ea",
+    "semantic_hash": "e1cfd1bfc26121bb398a724bef8cb6ea"
   },
   "src/db/index.ts": {
     "mtime": 1781676098.2058878,
@@ -115,9 +115,9 @@
     "semantic_hash": "a70dc10eb0c3e956e67791e94b18e4d6"
   },
   "src/lib/email.ts": {
-    "mtime": 1782848179.3680856,
-    "ast_hash": "721c5ff8df7577e802f36adfb25eb879",
-    "semantic_hash": ""
+    "mtime": 1781676259.191446,
+    "ast_hash": "cbb202d6c7dd0773950f9342ecf9c53b",
+    "semantic_hash": "cbb202d6c7dd0773950f9342ecf9c53b"
   },
   "src/lib/errors.ts": {
     "mtime": 1781676223.806091,
@@ -475,9 +475,9 @@
     "semantic_hash": "6ea531267db1d2c26aadbc92a66f8b93"
   },
   "README.md": {
-    "mtime": 1782848179.8608606,
-    "ast_hash": "844a1adf2750f0876f2777858171754b",
-    "semantic_hash": ""
+    "mtime": 1781719593.528157,
+    "ast_hash": "e4ce312a688c2c27013280f3df19cd00",
+    "semantic_hash": "e4ce312a688c2c27013280f3df19cd00"
   },
   ".claude/settings.json": {
     "mtime": 1781723879.346702,
@@ -510,8 +510,8 @@
     "semantic_hash": ""
   },
   "test/orders-contract.test.ts": {
-    "mtime": 1781841053.567524,
-    "ast_hash": "25dc04bc3f7cc74452d022ca896195ad",
+    "mtime": 1781840480.891081,
+    "ast_hash": "d107961a2a329082ca708792c68635a2",
     "semantic_hash": ""
   },
   "test/products-contract.test.ts": {

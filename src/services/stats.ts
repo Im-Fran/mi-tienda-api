@@ -27,10 +27,17 @@ export async function summary(
     })
     .from(orders)
     .where(dateConds(storeId, from, to));
+
+  const totalOrders = Number(row?.totalOrders ?? 0);
+  const totalRevenue = Number(row?.revenue ?? 0);
+  const paidOrders = Number(row?.paidOrders ?? 0);
+  const averageOrderValue = paidOrders > 0 ? totalRevenue / paidOrders : 0;
+
   return {
-    totalOrders: Number(row?.totalOrders ?? 0),
-    paidOrders: Number(row?.paidOrders ?? 0),
-    revenue: Number(row?.revenue ?? 0),
+    totalRevenue,
+    totalOrders,
+    averageOrderValue,
+    currencyCode: "USD",
   };
 }
 
@@ -55,11 +62,12 @@ export async function topProducts(
     .groupBy(productId)
     .orderBy(sql`sum(${orderItems.quantity}) desc`)
     .limit(limit);
+
   return rows.map((r) => ({
     productId: r.productId,
     productName: r.productName,
-    unitsSold: Number(r.unitsSold),
-    revenue: Number(r.revenue),
+    totalRevenue: Number(r.revenue),
+    totalQuantity: Number(r.unitsSold),
   }));
 }
 
@@ -94,15 +102,15 @@ export async function revenueOverTime(
     .select({
       bucket,
       revenue: sql<number>`coalesce(sum(${REVENUE_SQL}), 0)`,
-      orders: sql<number>`count(*)`,
+      ordersCount: sql<number>`count(*)`,
     })
     .from(orders)
     .where(dateConds(storeId, from, to))
     .groupBy(bucket)
     .orderBy(bucket);
+
   return rows.map((r) => ({
-    bucket: r.bucket,
+    date: r.bucket,
     revenue: Number(r.revenue),
-    orders: Number(r.orders),
   }));
 }

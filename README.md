@@ -25,20 +25,20 @@ Permite a cualquier usuario crear y gestionar su propia tienda en línea: produc
 
 ## Tecnologías
 
-| Capa | Tecnología |
-|---|---|
-| Runtime | [Cloudflare Workers](https://workers.cloudflare.com/) |
-| Framework HTTP | [Hono](https://hono.dev/) v4 |
-| Base de datos | [Cloudflare D1](https://developers.cloudflare.com/d1/) (SQLite serverless) |
-| ORM / migraciones | [Drizzle ORM](https://orm.drizzle.team/) + Drizzle Kit |
-| Sesiones | [Cloudflare KV](https://developers.cloudflare.com/kv/) (dos namespaces: usuarios y clientes) |
-| Almacenamiento de archivos | [Cloudflare R2](https://developers.cloudflare.com/r2/) (logos e imágenes de productos) |
-| Autenticación | Magic links + OAuth 2.0 (Google y GitHub) |
-| Envío de email | [Resend](https://resend.com/) |
-| Validación | [Zod](https://zod.dev/) v4 |
-| Lenguaje | TypeScript |
-| Tests | [Vitest](https://vitest.dev/) + `@cloudflare/vitest-pool-workers` |
-| CLI de despliegue | [Wrangler](https://developers.cloudflare.com/workers/wrangler/) v4 |
+| Capa                       | Tecnología                                                                                   |
+| -------------------------- | -------------------------------------------------------------------------------------------- |
+| Runtime                    | [Cloudflare Workers](https://workers.cloudflare.com/)                                        |
+| Framework HTTP             | [Hono](https://hono.dev/) v4                                                                 |
+| Base de datos              | [Cloudflare D1](https://developers.cloudflare.com/d1/) (SQLite serverless)                   |
+| ORM / migraciones          | [Drizzle ORM](https://orm.drizzle.team/) + Drizzle Kit                                       |
+| Sesiones                   | [Cloudflare KV](https://developers.cloudflare.com/kv/) (dos namespaces: usuarios y clientes) |
+| Almacenamiento de archivos | [Cloudflare R2](https://developers.cloudflare.com/r2/) (logos e imágenes de productos)       |
+| Autenticación              | Magic links + OAuth 2.0 (Google y GitHub)                                                    |
+| Envío de email             | [Resend](https://resend.com/)                                                                |
+| Validación                 | [Zod](https://zod.dev/) v4                                                                   |
+| Lenguaje                   | TypeScript                                                                                   |
+| Tests                      | [Vitest](https://vitest.dev/) + `@cloudflare/vitest-pool-workers`                            |
+| CLI de despliegue          | [Wrangler](https://developers.cloudflare.com/workers/wrangler/) v4                           |
 
 ---
 
@@ -70,23 +70,23 @@ Para desarrollo local, las variables sensibles se inyectan a través del archivo
 cp .dev.vars.example .dev.vars
 ```
 
-| Variable | Descripción | Requerida |
-|---|---|---|
-| `GOOGLE_CLIENT_ID` | ID de cliente OAuth de Google | Solo si se usa login con Google |
-| `GOOGLE_CLIENT_SECRET` | Secreto OAuth de Google | Solo si se usa login con Google |
-| `GITHUB_CLIENT_ID` | ID de cliente OAuth de GitHub | Solo si se usa login con GitHub |
-| `GITHUB_CLIENT_SECRET` | Secreto OAuth de GitHub | Solo si se usa login con GitHub |
-| `RESEND_API_KEY` | API key de Resend para enviar magic links | Sí |
+| Variable               | Descripción                               | Requerida                       |
+| ---------------------- | ----------------------------------------- | ------------------------------- |
+| `GOOGLE_CLIENT_ID`     | ID de cliente OAuth de Google             | Solo si se usa login con Google |
+| `GOOGLE_CLIENT_SECRET` | Secreto OAuth de Google                   | Solo si se usa login con Google |
+| `GITHUB_CLIENT_ID`     | ID de cliente OAuth de GitHub             | Solo si se usa login con GitHub |
+| `GITHUB_CLIENT_SECRET` | Secreto OAuth de GitHub                   | Solo si se usa login con GitHub |
+| `RESEND_API_KEY`       | API key de Resend para enviar magic links | Sí                              |
 
 Las siguientes variables **no son secretos** y ya están configuradas en `wrangler.jsonc` por entorno:
 
-| Variable | Desarrollo | Producción |
-|---|---|---|
-| `BASE_URL` | `http://localhost:8787` | `https://api-mitienda.franciscosolis.cl` |
-| `R2_PUBLIC_URL` | `https://assets-mitienda-dev.franciscosolis.cl` | `https://assets-mitienda.franciscosolis.cl` |
-| `EMAIL_FROM` | `miTienda <no-reply@mitienda.local>` | `miTienda <noreply@franciscosolis.cl>` |
-| `EMAIL_PROVIDER` | `resend` | `resend` |
-| `OAUTH_REDIRECT_BASE` | `http://localhost:8787` | `https://api-mitienda.franciscosolis.cl` |
+| Variable              | Desarrollo                                      | Producción                                  |
+| --------------------- | ----------------------------------------------- | ------------------------------------------- |
+| `BASE_URL`            | `http://localhost:8787`                         | `https://api-mitienda.franciscosolis.cl`    |
+| `R2_PUBLIC_URL`       | `https://assets-mitienda-dev.franciscosolis.cl` | `https://assets-mitienda.franciscosolis.cl` |
+| `EMAIL_FROM`          | `Mi Tienda <no-reply@mitienda.local>`           | `Mi Tienda <noreply@franciscosolis.cl>`     |
+| `EMAIL_PROVIDER`      | `resend`                                        | `resend`                                    |
+| `OAUTH_REDIRECT_BASE` | `http://localhost:8787`                         | `https://api-mitienda.franciscosolis.cl`    |
 
 En producción, los secretos se configuran con Wrangler (no se suben al repositorio):
 
@@ -133,12 +133,12 @@ El esquema se define en `src/db/schema/` usando Drizzle ORM y SQLite a través d
 
 ### Comandos disponibles
 
-| Comando | Descripción |
-|---|---|
-| `npm run db:generate` | Genera nuevos archivos SQL de migración a partir del esquema TypeScript |
-| `npm run db:migrate:local` | Aplica las migraciones en la base de datos D1 local |
-| `npm run db:migrate:remote` | Aplica las migraciones en la base de datos D1 remota (producción) |
-| `npm run cf-typegen` | Regenera los tipos TypeScript de los bindings de Cloudflare |
+| Comando                     | Descripción                                                             |
+| --------------------------- | ----------------------------------------------------------------------- |
+| `npm run db:generate`       | Genera nuevos archivos SQL de migración a partir del esquema TypeScript |
+| `npm run db:migrate:local`  | Aplica las migraciones en la base de datos D1 local                     |
+| `npm run db:migrate:remote` | Aplica las migraciones en la base de datos D1 remota (producción)       |
+| `npm run cf-typegen`        | Regenera los tipos TypeScript de los bindings de Cloudflare             |
 
 ### Seed inicial
 
@@ -208,179 +208,179 @@ Todas las respuestas siguen el formato [JSend](#formato-de-respuesta). Los endpo
 
 ### Salud
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `GET` | `/` | Estado de la API |
-| `GET` | `/api/health` | Health check con timestamp |
+| Método | Ruta          | Descripción                |
+| ------ | ------------- | -------------------------- |
+| `GET`  | `/`           | Estado de la API           |
+| `GET`  | `/api/health` | Health check con timestamp |
 
 ### Autenticación de usuarios (`/api/auth`)
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `GET` | `/api/auth/oauth/:provider` | Inicia flujo OAuth (Google / GitHub) |
-| `GET` | `/api/auth/oauth/:provider/callback` | Callback OAuth, devuelve token de sesión |
-| `POST` | `/api/auth/magic-link` | Envía magic link al email indicado |
-| `GET` | `/api/auth/magic-link/verify` | Verifica el token del magic link |
-| `POST` | `/api/auth/logout` | `[Auth]` Cierra la sesión activa |
-| `GET` | `/api/auth/me` | `[Auth]` Devuelve el usuario autenticado |
+| Método | Ruta                                 | Descripción                              |
+| ------ | ------------------------------------ | ---------------------------------------- |
+| `GET`  | `/api/auth/oauth/:provider`          | Inicia flujo OAuth (Google / GitHub)     |
+| `GET`  | `/api/auth/oauth/:provider/callback` | Callback OAuth, devuelve token de sesión |
+| `POST` | `/api/auth/magic-link`               | Envía magic link al email indicado       |
+| `GET`  | `/api/auth/magic-link/verify`        | Verifica el token del magic link         |
+| `POST` | `/api/auth/logout`                   | `[Auth]` Cierra la sesión activa         |
+| `GET`  | `/api/auth/me`                       | `[Auth]` Devuelve el usuario autenticado |
 
 ### Autenticación de clientes (`/api/auth/customer`)
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `GET` | `/api/auth/customer/oauth/:provider` | Inicia flujo OAuth para cliente final |
-| `GET` | `/api/auth/customer/oauth/:provider/callback` | Callback OAuth de cliente |
-| `POST` | `/api/auth/customer/magic-link` | Envía magic link a un cliente |
-| `GET` | `/api/auth/customer/magic-link/verify` | Verifica magic link de cliente |
-| `POST` | `/api/auth/customer/logout` | `[Customer Auth]` Cierra sesión de cliente |
-| `GET` | `/api/auth/customer/me` | `[Customer Auth]` Devuelve el cliente autenticado |
+| Método | Ruta                                          | Descripción                                       |
+| ------ | --------------------------------------------- | ------------------------------------------------- |
+| `GET`  | `/api/auth/customer/oauth/:provider`          | Inicia flujo OAuth para cliente final             |
+| `GET`  | `/api/auth/customer/oauth/:provider/callback` | Callback OAuth de cliente                         |
+| `POST` | `/api/auth/customer/magic-link`               | Envía magic link a un cliente                     |
+| `GET`  | `/api/auth/customer/magic-link/verify`        | Verifica magic link de cliente                    |
+| `POST` | `/api/auth/customer/logout`                   | `[Customer Auth]` Cierra sesión de cliente        |
+| `GET`  | `/api/auth/customer/me`                       | `[Customer Auth]` Devuelve el cliente autenticado |
 
 ### Perfil de usuario (`/api/users`)
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `GET` | `/api/users/me` | `[Auth]` Perfil del usuario |
-| `PATCH` | `/api/users/me` | `[Auth]` Actualiza nombre / avatar |
+| Método   | Ruta            | Descripción                                 |
+| -------- | --------------- | ------------------------------------------- |
+| `GET`    | `/api/users/me` | `[Auth]` Perfil del usuario                 |
+| `PATCH`  | `/api/users/me` | `[Auth]` Actualiza nombre / avatar          |
 | `DELETE` | `/api/users/me` | `[Auth]` Elimina cuenta y tiendas asociadas |
 
 ### Perfil de cliente (`/api/customers`)
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `GET` | `/api/customers/me` | `[Customer Auth]` Perfil del cliente |
-| `PATCH` | `/api/customers/me` | `[Customer Auth]` Actualiza datos del cliente |
-| `GET` | `/api/customers/me/addresses` | `[Customer Auth]` Lista de direcciones |
-| `POST` | `/api/customers/me/addresses` | `[Customer Auth]` Agrega una dirección |
-| `PATCH` | `/api/customers/me/addresses/:id` | `[Customer Auth]` Actualiza una dirección |
-| `DELETE` | `/api/customers/me/addresses/:id` | `[Customer Auth]` Elimina una dirección |
-| `GET` | `/api/customers/me/orders` | `[Customer Auth]` Historial de pedidos |
-| `GET` | `/api/customers/me/orders/:id` | `[Customer Auth]` Detalle de un pedido |
+| Método   | Ruta                              | Descripción                                   |
+| -------- | --------------------------------- | --------------------------------------------- |
+| `GET`    | `/api/customers/me`               | `[Customer Auth]` Perfil del cliente          |
+| `PATCH`  | `/api/customers/me`               | `[Customer Auth]` Actualiza datos del cliente |
+| `GET`    | `/api/customers/me/addresses`     | `[Customer Auth]` Lista de direcciones        |
+| `POST`   | `/api/customers/me/addresses`     | `[Customer Auth]` Agrega una dirección        |
+| `PATCH`  | `/api/customers/me/addresses/:id` | `[Customer Auth]` Actualiza una dirección     |
+| `DELETE` | `/api/customers/me/addresses/:id` | `[Customer Auth]` Elimina una dirección       |
+| `GET`    | `/api/customers/me/orders`        | `[Customer Auth]` Historial de pedidos        |
+| `GET`    | `/api/customers/me/orders/:id`    | `[Customer Auth]` Detalle de un pedido        |
 
 ### Tiendas (`/api/stores`)
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `GET` | `/api/stores` | `[Auth]` Lista las tiendas del usuario |
-| `POST` | `/api/stores` | `[Auth]` Crea una nueva tienda |
-| `GET` | `/api/stores/:storeId` | `[Auth]` Detalle de una tienda |
-| `PATCH` | `/api/stores/:storeId` | `[Auth]` Actualiza datos de la tienda |
-| `DELETE` | `/api/stores/:storeId` | `[Auth]` Elimina la tienda y sus recursos |
-| `GET` | `/api/stores/:storeId/settings` | `[Auth]` Configuración de la tienda |
-| `PATCH` | `/api/stores/:storeId/settings` | `[Auth]` Actualiza configuración (moneda, impuestos, etc.) |
-| `POST` | `/api/stores/:storeId/logo` | `[Auth]` Sube el logo de la tienda (multipart) |
+| Método   | Ruta                            | Descripción                                                |
+| -------- | ------------------------------- | ---------------------------------------------------------- |
+| `GET`    | `/api/stores`                   | `[Auth]` Lista las tiendas del usuario                     |
+| `POST`   | `/api/stores`                   | `[Auth]` Crea una nueva tienda                             |
+| `GET`    | `/api/stores/:storeId`          | `[Auth]` Detalle de una tienda                             |
+| `PATCH`  | `/api/stores/:storeId`          | `[Auth]` Actualiza datos de la tienda                      |
+| `DELETE` | `/api/stores/:storeId`          | `[Auth]` Elimina la tienda y sus recursos                  |
+| `GET`    | `/api/stores/:storeId/settings` | `[Auth]` Configuración de la tienda                        |
+| `PATCH`  | `/api/stores/:storeId/settings` | `[Auth]` Actualiza configuración (moneda, impuestos, etc.) |
+| `POST`   | `/api/stores/:storeId/logo`     | `[Auth]` Sube el logo de la tienda (multipart)             |
 
 ### Productos (`/api/stores/:storeId/products`)
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `GET` | `.../products` | `[Auth]` Lista productos (con filtros) |
-| `POST` | `.../products` | `[Auth]` Crea un producto |
-| `GET` | `.../products/:id` | `[Auth]` Detalle de un producto |
-| `PATCH` | `.../products/:id` | `[Auth]` Actualiza un producto |
-| `DELETE` | `.../products/:id` | `[Auth]` Elimina un producto y sus imágenes |
-| `POST` | `.../products/:id/images` | `[Auth]` Sube imágenes del producto (multipart) |
-| `DELETE` | `.../products/:id/images/:imageId` | `[Auth]` Elimina una imagen |
-| `PATCH` | `.../products/:id/images/:imageId/main` | `[Auth]` Establece imagen principal |
-| `POST` | `.../products/:id/variants` | `[Auth]` Agrega una variante |
-| `PATCH` | `.../products/:id/variants/:variantId` | `[Auth]` Actualiza una variante |
-| `DELETE` | `.../products/:id/variants/:variantId` | `[Auth]` Elimina una variante |
+| Método   | Ruta                                    | Descripción                                     |
+| -------- | --------------------------------------- | ----------------------------------------------- |
+| `GET`    | `.../products`                          | `[Auth]` Lista productos (con filtros)          |
+| `POST`   | `.../products`                          | `[Auth]` Crea un producto                       |
+| `GET`    | `.../products/:id`                      | `[Auth]` Detalle de un producto                 |
+| `PATCH`  | `.../products/:id`                      | `[Auth]` Actualiza un producto                  |
+| `DELETE` | `.../products/:id`                      | `[Auth]` Elimina un producto y sus imágenes     |
+| `POST`   | `.../products/:id/images`               | `[Auth]` Sube imágenes del producto (multipart) |
+| `DELETE` | `.../products/:id/images/:imageId`      | `[Auth]` Elimina una imagen                     |
+| `PATCH`  | `.../products/:id/images/:imageId/main` | `[Auth]` Establece imagen principal             |
+| `POST`   | `.../products/:id/variants`             | `[Auth]` Agrega una variante                    |
+| `PATCH`  | `.../products/:id/variants/:variantId`  | `[Auth]` Actualiza una variante                 |
+| `DELETE` | `.../products/:id/variants/:variantId`  | `[Auth]` Elimina una variante                   |
 
 ### Categorías (`/api/stores/:storeId/categories`)
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `GET` | `.../categories` | `[Auth]` Árbol de categorías de la tienda |
-| `POST` | `.../categories` | `[Auth]` Crea una categoría (acepta `parentId`) |
-| `PATCH` | `.../categories/:id` | `[Auth]` Actualiza una categoría |
+| Método   | Ruta                 | Descripción                                                           |
+| -------- | -------------------- | --------------------------------------------------------------------- |
+| `GET`    | `.../categories`     | `[Auth]` Árbol de categorías de la tienda                             |
+| `POST`   | `.../categories`     | `[Auth]` Crea una categoría (acepta `parentId`)                       |
+| `PATCH`  | `.../categories/:id` | `[Auth]` Actualiza una categoría                                      |
 | `DELETE` | `.../categories/:id` | `[Auth]` Elimina una categoría (`?recursive=true` para subcategorías) |
 
 ### Cupones (`/api/stores/:storeId/coupons`)
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `POST` | `.../coupons/validate` | Público: valida un código de cupón |
-| `GET` | `.../coupons` | `[Auth]` Lista cupones |
-| `POST` | `.../coupons` | `[Auth]` Crea un cupón |
-| `GET` | `.../coupons/:id` | `[Auth]` Detalle de un cupón |
-| `PATCH` | `.../coupons/:id` | `[Auth]` Actualiza un cupón |
-| `DELETE` | `.../coupons/:id` | `[Auth]` Elimina un cupón |
+| Método   | Ruta                   | Descripción                        |
+| -------- | ---------------------- | ---------------------------------- |
+| `POST`   | `.../coupons/validate` | Público: valida un código de cupón |
+| `GET`    | `.../coupons`          | `[Auth]` Lista cupones             |
+| `POST`   | `.../coupons`          | `[Auth]` Crea un cupón             |
+| `GET`    | `.../coupons/:id`      | `[Auth]` Detalle de un cupón       |
+| `PATCH`  | `.../coupons/:id`      | `[Auth]` Actualiza un cupón        |
+| `DELETE` | `.../coupons/:id`      | `[Auth]` Elimina un cupón          |
 
 ### Carrito (`/api/stores/:storeId/cart`)
 
 El carrito funciona para clientes autenticados y para invitados (guest token).
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `POST` | `.../cart` | Crea un carrito |
-| `GET` | `.../cart/:cartId` | Obtiene el carrito |
-| `POST` | `.../cart/:cartId/items` | Agrega un ítem |
-| `PATCH` | `.../cart/:cartId/items/:itemId` | Actualiza cantidad de un ítem |
-| `DELETE` | `.../cart/:cartId/items/:itemId` | Elimina un ítem |
-| `POST` | `.../cart/:cartId/coupon` | Aplica un cupón al carrito |
-| `DELETE` | `.../cart/:cartId/coupon` | Remueve el cupón del carrito |
-| `POST` | `.../cart/:cartId/checkout` | Realiza el checkout y crea el pedido |
+| Método   | Ruta                             | Descripción                          |
+| -------- | -------------------------------- | ------------------------------------ |
+| `POST`   | `.../cart`                       | Crea un carrito                      |
+| `GET`    | `.../cart/:cartId`               | Obtiene el carrito                   |
+| `POST`   | `.../cart/:cartId/items`         | Agrega un ítem                       |
+| `PATCH`  | `.../cart/:cartId/items/:itemId` | Actualiza cantidad de un ítem        |
+| `DELETE` | `.../cart/:cartId/items/:itemId` | Elimina un ítem                      |
+| `POST`   | `.../cart/:cartId/coupon`        | Aplica un cupón al carrito           |
+| `DELETE` | `.../cart/:cartId/coupon`        | Remueve el cupón del carrito         |
+| `POST`   | `.../cart/:cartId/checkout`      | Realiza el checkout y crea el pedido |
 
 ### Carritos — vista admin (`/api/stores/:storeId/carts`)
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `GET` | `.../carts` | `[Auth]` Lista todos los carritos de la tienda |
-| `GET` | `.../carts/:id` | `[Auth]` Detalle de un carrito |
+| Método | Ruta            | Descripción                                    |
+| ------ | --------------- | ---------------------------------------------- |
+| `GET`  | `.../carts`     | `[Auth]` Lista todos los carritos de la tienda |
+| `GET`  | `.../carts/:id` | `[Auth]` Detalle de un carrito                 |
 
 ### Pedidos (`/api/stores/:storeId/orders`)
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `GET` | `.../orders` | `[Auth]` Lista pedidos (con filtros) |
-| `GET` | `.../orders/:id` | `[Auth]` Detalle de un pedido |
+| Método  | Ruta                    | Descripción                             |
+| ------- | ----------------------- | --------------------------------------- |
+| `GET`   | `.../orders`            | `[Auth]` Lista pedidos (con filtros)    |
+| `GET`   | `.../orders/:id`        | `[Auth]` Detalle de un pedido           |
 | `PATCH` | `.../orders/:id/status` | `[Auth]` Actualiza el estado del pedido |
 
 ### Métodos de pago (`/api/stores/:storeId/payments`)
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `GET` | `.../payments/methods` | `[Auth]` Lista métodos de pago |
-| `POST` | `.../payments/methods` | `[Auth]` Crea un método de pago |
-| `PATCH` | `.../payments/methods/:id` | `[Auth]` Actualiza un método de pago |
-| `DELETE` | `.../payments/methods/:id` | `[Auth]` Elimina un método de pago |
+| Método   | Ruta                       | Descripción                          |
+| -------- | -------------------------- | ------------------------------------ |
+| `GET`    | `.../payments/methods`     | `[Auth]` Lista métodos de pago       |
+| `POST`   | `.../payments/methods`     | `[Auth]` Crea un método de pago      |
+| `PATCH`  | `.../payments/methods/:id` | `[Auth]` Actualiza un método de pago |
+| `DELETE` | `.../payments/methods/:id` | `[Auth]` Elimina un método de pago   |
 
 ### Métodos de envío (`/api/stores/:storeId/shipping`)
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `GET` | `.../shipping/methods` | `[Auth]` Lista métodos de envío |
-| `POST` | `.../shipping/methods` | `[Auth]` Crea un método de envío |
-| `PATCH` | `.../shipping/methods/:id` | `[Auth]` Actualiza un método de envío |
-| `DELETE` | `.../shipping/methods/:id` | `[Auth]` Elimina un método de envío |
+| Método   | Ruta                       | Descripción                           |
+| -------- | -------------------------- | ------------------------------------- |
+| `GET`    | `.../shipping/methods`     | `[Auth]` Lista métodos de envío       |
+| `POST`   | `.../shipping/methods`     | `[Auth]` Crea un método de envío      |
+| `PATCH`  | `.../shipping/methods/:id` | `[Auth]` Actualiza un método de envío |
+| `DELETE` | `.../shipping/methods/:id` | `[Auth]` Elimina un método de envío   |
 
 ### Clientes de la tienda — vista admin (`/api/stores/:storeId/customers`)
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `GET` | `.../customers` | `[Auth]` Lista clientes de la tienda |
-| `GET` | `.../customers/:id` | `[Auth]` Detalle de un cliente |
+| Método | Ruta                | Descripción                          |
+| ------ | ------------------- | ------------------------------------ |
+| `GET`  | `.../customers`     | `[Auth]` Lista clientes de la tienda |
+| `GET`  | `.../customers/:id` | `[Auth]` Detalle de un cliente       |
 
 ### Estadísticas (`/api/stores/:storeId/stats`)
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `GET` | `.../stats/summary` | `[Auth]` Resumen general (`?from=&to=`) |
-| `GET` | `.../stats/top-products` | `[Auth]` Productos más vendidos |
-| `GET` | `.../stats/orders-by-status` | `[Auth]` Pedidos agrupados por estado |
-| `GET` | `.../stats/revenue-over-time` | `[Auth]` Ingresos en el tiempo (`?interval=day\|week\|month`) |
+| Método | Ruta                          | Descripción                                                   |
+| ------ | ----------------------------- | ------------------------------------------------------------- |
+| `GET`  | `.../stats/summary`           | `[Auth]` Resumen general (`?from=&to=`)                       |
+| `GET`  | `.../stats/top-products`      | `[Auth]` Productos más vendidos                               |
+| `GET`  | `.../stats/orders-by-status`  | `[Auth]` Pedidos agrupados por estado                         |
+| `GET`  | `.../stats/revenue-over-time` | `[Auth]` Ingresos en el tiempo (`?interval=day\|week\|month`) |
 
 ### Administración del sistema (`/api/admin`)
 
 Requiere autenticación de usuario con los permisos de sistema correspondientes (RBAC).
 
-| Método | Ruta | Permiso requerido | Descripción |
-|---|---|---|---|
-| `GET` | `/api/admin/users` | `user.view` | Lista todos los usuarios |
-| `GET` | `/api/admin/users/:id` | `user.view` | Detalle de un usuario |
-| `PATCH` | `/api/admin/users/:id/roles` | `user.manage_roles` | Asigna / remueve roles |
-| `GET` | `/api/admin/roles` | `role.view` | Lista roles del sistema |
-| `GET` | `/api/admin/permissions` | `permission.view` | Lista permisos del sistema |
-| `POST` | `/api/admin/roles/:id/permissions` | `role.manage_permissions` | Asigna un permiso a un rol |
+| Método   | Ruta                                       | Permiso requerido         | Descripción                  |
+| -------- | ------------------------------------------ | ------------------------- | ---------------------------- |
+| `GET`    | `/api/admin/users`                         | `user.view`               | Lista todos los usuarios     |
+| `GET`    | `/api/admin/users/:id`                     | `user.view`               | Detalle de un usuario        |
+| `PATCH`  | `/api/admin/users/:id/roles`               | `user.manage_roles`       | Asigna / remueve roles       |
+| `GET`    | `/api/admin/roles`                         | `role.view`               | Lista roles del sistema      |
+| `GET`    | `/api/admin/permissions`                   | `permission.view`         | Lista permisos del sistema   |
+| `POST`   | `/api/admin/roles/:id/permissions`         | `role.manage_permissions` | Asigna un permiso a un rol   |
 | `DELETE` | `/api/admin/roles/:id/permissions/:permId` | `role.manage_permissions` | Remueve un permiso de un rol |
 
 ---
