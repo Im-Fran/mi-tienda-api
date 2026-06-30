@@ -44,14 +44,14 @@ async function seedPaidOrder(
   await db().insert(orderItems).values({
     orderId: order.id,
     variantId,
-    productSnapshot: JSON.stringify({
+    productSnapshot: {
       productId,
       productName: "Test Product",
       variantId,
       variantName: "Default",
       sku: null,
       type: "physical",
-    }),
+    },
     quantity: 1,
     unitPrice: total,
     totalPrice: total,
