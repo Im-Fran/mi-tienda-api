@@ -2,10 +2,8 @@ import { eq } from "drizzle-orm";
 import { createMiddleware } from "hono/factory";
 import { stores } from "../db/schema";
 import { badRequest, forbidden, notFound } from "../lib/errors";
-import { userHasAnyRole } from "../services/permissions";
+import { userHasPermission } from "../services/permissions";
 import type { AppEnv } from "../types";
-
-const ADMIN_ROLES = ["Administrator", "StoreAdministrator"] as const;
 
 /**
  * For owner routes under `/api/stores/:storeId/*`: the store must exist and
@@ -23,8 +21,9 @@ export const storeContextMiddleware = createMiddleware<AppEnv>(
 
     const user = c.get("user");
     const isOwner = !!user && store.userId === user.id;
+    // ponytail: checks store.{storeId}.view — matches Super Admin (*) and Store Admin (store.*.view)
     const isAdmin =
-      !!user && (await userHasAnyRole(c.var.db, user.id, ADMIN_ROLES));
+      !!user && (await userHasPermission(c.var.db, user.id, `store.${storeId}.view`));
     if (!isOwner && !isAdmin) {
       throw forbidden("You do not have access to this store");
     }
