@@ -6,7 +6,7 @@ export const createCategorySchema = z.object({
   slug: slugSchema.optional(),
   description: z.string().nullish(),
   parentId: z.string().min(1).nullish(),
-  sortOrder: z.number().int().min(0).default(0),
+  sortOrder: z.number().int().default(0),
 });
 
 export const updateCategorySchema = z
@@ -15,7 +15,7 @@ export const updateCategorySchema = z
     slug: slugSchema,
     description: z.string().nullish(),
     parentId: z.string().min(1).nullish(),
-    sortOrder: z.number().int().min(0),
+    sortOrder: z.number().int(),
   })
   .partial();
 
