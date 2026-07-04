@@ -225,3 +225,75 @@ describe("categories – slug editing", () => {
     expect(patchRes.status).toBe(422);
   });
 });
+
+describe("categories – sortOrder reordering", () => {
+  it("PATCH with sortOrder: 0 and parentId returns 200", async () => {
+    const { user, token } = await authUser();
+    const store = await createStore(user.id);
+
+    const parentRes = await api(`/api/stores/${store.id}/categories`, {
+      method: "POST",
+      token,
+      body: { name: "Parent" },
+    });
+    expect(parentRes.status).toBe(201);
+    const parentId = parentRes.json.data.category.id;
+
+    const childRes = await api(`/api/stores/${store.id}/categories`, {
+      method: "POST",
+      token,
+      body: { name: "Child", parentId },
+    });
+    expect(childRes.status).toBe(201);
+    const catId = childRes.json.data.category.id;
+
+    // sortOrder: 0 con parentId — debe aceptarse sin 422
+    const patchRes = await api(
+      `/api/stores/${store.id}/categories/${catId}`,
+      { method: "PATCH", token, body: { sortOrder: 0, parentId } },
+    );
+    expect(patchRes.status).toBe(200);
+    expect(patchRes.json.data.category.sortOrder).toBe(0);
+  });
+
+  it("PATCH with sortOrder: -1 (negative value for prepend) returns 200", async () => {
+    const { user, token } = await authUser();
+    const store = await createStore(user.id);
+
+    const createRes = await api(`/api/stores/${store.id}/categories`, {
+      method: "POST",
+      token,
+      body: { name: "Reorderable" },
+    });
+    expect(createRes.status).toBe(201);
+    const catId = createRes.json.data.category.id;
+
+    // sortOrder negativo — el algoritmo de reordenamiento puede generarlos
+    const patchRes = await api(
+      `/api/stores/${store.id}/categories/${catId}`,
+      { method: "PATCH", token, body: { sortOrder: -1 } },
+    );
+    expect(patchRes.status).toBe(200);
+    expect(patchRes.json.data.category.sortOrder).toBe(-1);
+  });
+
+  it("PATCH with sortOrder: 0 only returns 200", async () => {
+    const { user, token } = await authUser();
+    const store = await createStore(user.id);
+
+    const createRes = await api(`/api/stores/${store.id}/categories`, {
+      method: "POST",
+      token,
+      body: { name: "Zero Order" },
+    });
+    expect(createRes.status).toBe(201);
+    const catId = createRes.json.data.category.id;
+
+    const patchRes = await api(
+      `/api/stores/${store.id}/categories/${catId}`,
+      { method: "PATCH", token, body: { sortOrder: 0 } },
+    );
+    expect(patchRes.status).toBe(200);
+    expect(patchRes.json.data.category.sortOrder).toBe(0);
+  });
+});
