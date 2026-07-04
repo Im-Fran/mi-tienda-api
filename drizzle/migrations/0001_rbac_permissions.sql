@@ -1,3 +1,7 @@
+-- Drop old role_permissions first (it conflicts with the new table below)
+DROP TABLE `role_permissions`;
+--> statement-breakpoint
+
 -- New RBAC tables
 CREATE TABLE `roles` (
 	`id` text PRIMARY KEY NOT NULL,
@@ -71,9 +75,7 @@ SELECT (lower(hex(randomblob(4))) || '-' || lower(hex(randomblob(2))) || '-4' ||
 FROM `user_system_roles`;
 --> statement-breakpoint
 
--- Drop old tables
-DROP TABLE `role_permissions`;
---> statement-breakpoint
+-- Drop remaining old tables
 DROP TABLE `user_system_roles`;
 --> statement-breakpoint
 DROP TABLE `system_permissions`;

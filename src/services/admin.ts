@@ -26,7 +26,6 @@ export async function getUserDetail(db: Database, id: string) {
   const user = await db.query.users.findFirst({ where: eq(users.id, id) });
   if (!user) throw notFound("User");
 
-  const now = new Date();
   const [userRoleRows, userPermRows] = await Promise.all([
     db.select({ id: userRoles.id, roleId: userRoles.roleId, expiresAt: userRoles.expiresAt, grantedAt: userRoles.grantedAt })
       .from(userRoles)
@@ -62,8 +61,9 @@ export async function assignRoleToUser(
   if (!user) throw notFound("User");
   if (!role) throw notFound("Role");
 
-  await db.insert(userRoles).values({ userId, roleId, expiresAt }).onConflictDoNothing();
-  return listUserRoles(db, userId);
+  const [row] = await db.insert(userRoles).values({ userId, roleId, expiresAt }).returning();
+  if (!row) throw badRequest("Role already assigned to this user");
+  return row;
 }
 
 export async function removeRoleFromUser(
@@ -98,10 +98,11 @@ export async function assignPermissionToUser(
   const user = await db.query.users.findFirst({ where: eq(users.id, userId) });
   if (!user) throw notFound("User");
 
-  await db.insert(userPermissions)
+  const [row] = await db.insert(userPermissions)
     .values({ userId, permission, priority, expiresAt })
-    .onConflictDoNothing();
-  return listUserPermissions(db, userId);
+    .returning();
+  if (!row) throw badRequest(`Permission '${permission}' already assigned to this user`);
+  return row;
 }
 
 export async function removeUserPermission(
@@ -167,10 +168,11 @@ export async function assignPermissionToRole(
   const role = await db.query.roles.findFirst({ where: eq(roles.id, roleId) });
   if (!role) throw notFound("Role");
 
-  await db.insert(rolePermissions)
+  const [row] = await db.insert(rolePermissions)
     .values({ roleId, permission, priority, expiresAt })
-    .onConflictDoNothing();
-  return listRolePermissions(db, roleId);
+    .returning();
+  if (!row) throw badRequest(`Permission '${permission}' already assigned to this role`);
+  return row;
 }
 
 export async function removeRolePermission(
