@@ -15,10 +15,11 @@ import {
 import { shippingMethods } from "./shipping";
 import { storeCountries, storeSettings, stores } from "./stores";
 import {
+  permissions,
   rolePermissions,
-  systemPermissions,
-  systemRoles,
-  userSystemRoles,
+  roles,
+  userPermissions,
+  userRoles,
   users,
 } from "./users";
 
@@ -40,46 +41,45 @@ export * from "./shipping";
 
 export const usersRelations = relations(users, ({ many }) => ({
   stores: many(stores),
-  roles: many(userSystemRoles),
+  roles: many(userRoles),
+  permissions: many(userPermissions),
 }));
 
-export const systemRolesRelations = relations(systemRoles, ({ many }) => ({
+export const rolesRelations = relations(roles, ({ many }) => ({
   permissions: many(rolePermissions),
-  users: many(userSystemRoles),
+  users: many(userRoles),
 }));
 
-export const systemPermissionsRelations = relations(
-  systemPermissions,
-  ({ many }) => ({ roles: many(rolePermissions) }),
-);
+// ponytail: permissions table is a catalogue only — no FK children, no relations needed
+export const permissionsRelations = relations(permissions, () => ({}));
 
 export const rolePermissionsRelations = relations(
   rolePermissions,
   ({ one }) => ({
-    role: one(systemRoles, {
+    role: one(roles, {
       fields: [rolePermissions.roleId],
-      references: [systemRoles.id],
-    }),
-    permission: one(systemPermissions, {
-      fields: [rolePermissions.permissionId],
-      references: [systemPermissions.id],
+      references: [roles.id],
     }),
   }),
 );
 
-export const userSystemRolesRelations = relations(
-  userSystemRoles,
-  ({ one }) => ({
-    user: one(users, {
-      fields: [userSystemRoles.userId],
-      references: [users.id],
-    }),
-    role: one(systemRoles, {
-      fields: [userSystemRoles.roleId],
-      references: [systemRoles.id],
-    }),
+export const userRolesRelations = relations(userRoles, ({ one }) => ({
+  user: one(users, {
+    fields: [userRoles.userId],
+    references: [users.id],
   }),
-);
+  role: one(roles, {
+    fields: [userRoles.roleId],
+    references: [roles.id],
+  }),
+}));
+
+export const userPermissionsRelations = relations(userPermissions, ({ one }) => ({
+  user: one(users, {
+    fields: [userPermissions.userId],
+    references: [users.id],
+  }),
+}));
 
 export const storesRelations = relations(stores, ({ one, many }) => ({
   owner: one(users, { fields: [stores.userId], references: [users.id] }),
