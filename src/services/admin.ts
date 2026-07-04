@@ -1,14 +1,16 @@
-import { and, eq, inArray } from "drizzle-orm";
+import { and, eq, gt, isNull, or } from "drizzle-orm";
 import type { Database } from "../db";
 import {
+  permissions,
   rolePermissions,
-  systemPermissions,
-  systemRoles,
-  userSystemRoles,
+  roles,
+  userPermissions,
+  userRoles,
   users,
 } from "../db/schema";
 import { badRequest, notFound } from "../lib/errors";
-import { getUserRoleNames } from "./permissions";
+
+// --- Users ---
 
 export async function listUsers(db: Database, page: number, perPage: number) {
   const total = await db.$count(users);
@@ -23,93 +25,168 @@ export async function listUsers(db: Database, page: number, perPage: number) {
 export async function getUserDetail(db: Database, id: string) {
   const user = await db.query.users.findFirst({ where: eq(users.id, id) });
   if (!user) throw notFound("User");
-  const roles = await getUserRoleNames(db, id);
-  return { ...user, roles };
+
+  const now = new Date();
+  const [userRoleRows, userPermRows] = await Promise.all([
+    db.select({ id: userRoles.id, roleId: userRoles.roleId, expiresAt: userRoles.expiresAt, grantedAt: userRoles.grantedAt })
+      .from(userRoles)
+      .where(eq(userRoles.userId, id)),
+    db.select({ id: userPermissions.id, permission: userPermissions.permission, priority: userPermissions.priority, expiresAt: userPermissions.expiresAt, grantedAt: userPermissions.grantedAt })
+      .from(userPermissions)
+      .where(eq(userPermissions.userId, id)),
+  ]);
+
+  return { ...user, roles: userRoleRows, permissions: userPermRows };
 }
 
-export async function assignUserRoles(
+// --- User role assignments ---
+
+export async function listUserRoles(db: Database, userId: string) {
+  const user = await db.query.users.findFirst({ where: eq(users.id, userId) });
+  if (!user) throw notFound("User");
+  return db.select({ id: userRoles.id, roleId: userRoles.roleId, expiresAt: userRoles.expiresAt, grantedAt: userRoles.grantedAt })
+    .from(userRoles)
+    .where(eq(userRoles.userId, userId));
+}
+
+export async function assignRoleToUser(
   db: Database,
   userId: string,
-  add: string[],
-  remove: string[],
+  roleId: string,
+  expiresAt?: Date,
+) {
+  const [user, role] = await Promise.all([
+    db.query.users.findFirst({ where: eq(users.id, userId) }),
+    db.query.roles.findFirst({ where: eq(roles.id, roleId) }),
+  ]);
+  if (!user) throw notFound("User");
+  if (!role) throw notFound("Role");
+
+  await db.insert(userRoles).values({ userId, roleId, expiresAt }).onConflictDoNothing();
+  return listUserRoles(db, userId);
+}
+
+export async function removeRoleFromUser(
+  db: Database,
+  userId: string,
+  userRoleId: string,
+) {
+  const [row] = await db
+    .delete(userRoles)
+    .where(and(eq(userRoles.id, userRoleId), eq(userRoles.userId, userId)))
+    .returning({ id: userRoles.id });
+  if (!row) throw notFound("User role assignment");
+}
+
+// --- User permission assignments ---
+
+export async function listUserPermissions(db: Database, userId: string) {
+  const user = await db.query.users.findFirst({ where: eq(users.id, userId) });
+  if (!user) throw notFound("User");
+  return db.select()
+    .from(userPermissions)
+    .where(eq(userPermissions.userId, userId));
+}
+
+export async function assignPermissionToUser(
+  db: Database,
+  userId: string,
+  permission: string,
+  expiresAt?: Date,
+  priority = 0,
 ) {
   const user = await db.query.users.findFirst({ where: eq(users.id, userId) });
   if (!user) throw notFound("User");
 
-  if (add.length > 0) {
-    const valid = await db
-      .select({ id: systemRoles.id })
-      .from(systemRoles)
-      .where(inArray(systemRoles.id, add));
-    const validIds = valid.map((r) => r.id);
-    if (validIds.length > 0) {
-      await db
-        .insert(userSystemRoles)
-        .values(validIds.map((roleId) => ({ userId, roleId })))
-        .onConflictDoNothing();
-    }
-  }
-
-  if (remove.length > 0) {
-    await db
-      .delete(userSystemRoles)
-      .where(
-        and(
-          eq(userSystemRoles.userId, userId),
-          inArray(userSystemRoles.roleId, remove),
-        ),
-      );
-  }
-
-  return getUserDetail(db, userId);
+  await db.insert(userPermissions)
+    .values({ userId, permission, priority, expiresAt })
+    .onConflictDoNothing();
+  return listUserPermissions(db, userId);
 }
+
+export async function removeUserPermission(
+  db: Database,
+  userId: string,
+  userPermissionId: string,
+) {
+  const [row] = await db
+    .delete(userPermissions)
+    .where(and(eq(userPermissions.id, userPermissionId), eq(userPermissions.userId, userId)))
+    .returning({ id: userPermissions.id });
+  if (!row) throw notFound("User permission assignment");
+}
+
+// --- Roles CRUD ---
 
 export function listRoles(db: Database) {
-  return db.query.systemRoles.findMany({
-    with: { permissions: { with: { permission: true } } },
-  });
+  return db.query.roles.findMany({ orderBy: (r, { asc }) => asc(r.name) });
 }
 
-export function listPermissions(db: Database) {
-  return db.query.systemPermissions.findMany({
-    orderBy: (p, { asc }) => asc(p.name),
-  });
+export async function createRole(db: Database, name: string, description?: string) {
+  const [row] = await db.insert(roles).values({ name, description }).returning();
+  return row;
+}
+
+export async function updateRole(
+  db: Database,
+  roleId: string,
+  data: { name?: string; description?: string },
+) {
+  const [row] = await db
+    .update(roles)
+    .set(data)
+    .where(eq(roles.id, roleId))
+    .returning();
+  if (!row) throw notFound("Role");
+  return row;
+}
+
+export async function deleteRole(db: Database, roleId: string) {
+  const [row] = await db
+    .delete(roles)
+    .where(eq(roles.id, roleId))
+    .returning({ id: roles.id });
+  if (!row) throw notFound("Role");
+}
+
+// --- Role permission assignments ---
+
+export async function listRolePermissions(db: Database, roleId: string) {
+  const role = await db.query.roles.findFirst({ where: eq(roles.id, roleId) });
+  if (!role) throw notFound("Role");
+  return db.select().from(rolePermissions).where(eq(rolePermissions.roleId, roleId));
 }
 
 export async function assignPermissionToRole(
   db: Database,
   roleId: string,
-  permissionId: string,
+  permission: string,
+  expiresAt?: Date,
+  priority = 0,
 ) {
-  const role = await db.query.systemRoles.findFirst({
-    where: eq(systemRoles.id, roleId),
-  });
+  const role = await db.query.roles.findFirst({ where: eq(roles.id, roleId) });
   if (!role) throw notFound("Role");
-  const permission = await db.query.systemPermissions.findFirst({
-    where: eq(systemPermissions.id, permissionId),
-  });
-  if (!permission) throw badRequest("Permission not found");
 
-  await db
-    .insert(rolePermissions)
-    .values({ roleId, permissionId })
+  await db.insert(rolePermissions)
+    .values({ roleId, permission, priority, expiresAt })
     .onConflictDoNothing();
-  return listRoles(db).then((roles) => roles.find((r) => r.id === roleId));
+  return listRolePermissions(db, roleId);
 }
 
-export async function removePermissionFromRole(
+export async function removeRolePermission(
   db: Database,
   roleId: string,
-  permissionId: string,
+  rolePermissionId: string,
 ) {
   const [row] = await db
     .delete(rolePermissions)
-    .where(
-      and(
-        eq(rolePermissions.roleId, roleId),
-        eq(rolePermissions.permissionId, permissionId),
-      ),
-    )
-    .returning({ roleId: rolePermissions.roleId });
-  if (!row) throw notFound("Role permission");
+    .where(and(eq(rolePermissions.id, rolePermissionId), eq(rolePermissions.roleId, roleId)))
+    .returning({ id: rolePermissions.id });
+  if (!row) throw notFound("Role permission assignment");
+}
+
+// --- Permission catalogue ---
+
+export function listPermissions(db: Database) {
+  return db.query.permissions.findMany({ orderBy: (p, { asc }) => asc(p.name) });
 }
