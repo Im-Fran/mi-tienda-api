@@ -1,16 +1,16 @@
-# Graph Report - mi-tienda-api  (2026-07-04)
+# Graph Report - mi-tienda-api  (2026-06-30)
 
 ## Corpus Check
-- 105 files · ~43,007 words
+- 106 files · ~42,799 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 983 nodes · 1954 edges · 60 communities (56 shown, 4 thin omitted)
+- 984 nodes · 1954 edges · 57 communities (50 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `91be446b`
+- Built from commit: `933e53ac`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -62,10 +62,7 @@
 - [[_COMMUNITY_Community 44|Community 44]]
 - [[_COMMUNITY_Updated At Column Snapshot|Updated At Column Snapshot]]
 - [[_COMMUNITY_Community 46|Community 46]]
-- [[_COMMUNITY_Community 47|Community 47]]
-- [[_COMMUNITY_Community 48|Community 48]]
 - [[_COMMUNITY_ID Column Snapshot|ID Column Snapshot]]
-- [[_COMMUNITY_Community 50|Community 50]]
 - [[_COMMUNITY_Drizzle Migration Journal|Drizzle Migration Journal]]
 - [[_COMMUNITY_Claude Settings Hooks|Claude Settings Hooks]]
 - [[_COMMUNITY_Local Dev Permissions|Local Dev Permissions]]
@@ -86,14 +83,14 @@
 10. `stores` - 14 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `db()` --calls--> `createDb()`  [EXTRACTED]
+  test/helpers.ts → src/db/index.ts
 - `authUser()` --calls--> `createUserSession()`  [EXTRACTED]
   test/helpers.ts → src/lib/session.ts
 - `authCustomer()` --calls--> `createCustomerSession()`  [EXTRACTED]
   test/helpers.ts → src/lib/session.ts
 - `Graphify Workflow` --rationale_for--> `mi-tienda-api`  [EXTRACTED]
   CLAUDE.md → README.md
-- `db()` --calls--> `createDb()`  [EXTRACTED]
-  test/helpers.ts → src/db/index.ts
 - `removePermissionFromRole()` --calls--> `notFound()`  [EXTRACTED]
   src/services/admin.ts → src/lib/errors.ts
 
@@ -108,31 +105,31 @@
 - **Authentication System** — readme_auth_magic_link, readme_auth_oauth, readme_resend, readme_cloudflare_kv [EXTRACTED 0.90]
 - **API Layer Architecture** — readme_src_routes, readme_src_services, readme_src_middleware, readme_src_validators [INFERRED 0.85]
 
-## Communities (60 total, 4 thin omitted)
+## Communities (57 total, 7 thin omitted)
 
 ### Community 0 - "Error Handling & Validators"
 Cohesion: 0.06
-Nodes (69): error(), JSend, JSendError, JSendFail, JSendSuccess, success(), asUploadedFile(), collectUploads() (+61 more)
+Nodes (69): unauthorized(), error(), JSend, JSendError, JSendFail, JSendSuccess, success(), asUploadedFile() (+61 more)
 
 ### Community 1 - "Core DB Schema"
 Cohesion: 0.07
-Nodes (51): MAGIC_LINK_SUBJECTS, CART_STATUSES, cartItems, categories, AddressSnapshot, BankTransferInfo, createdAt(), GuestSnapshot (+43 more)
+Nodes (26): cartItems, cartItemsRelations, cartsRelations, categoriesRelations, couponCategoriesRelations, couponProductsRelations, couponsRelations, customerAddressesRelations (+18 more)
 
 ### Community 2 - "Crypto & Utility Layer"
-Cohesion: 0.12
-Nodes (37): uuid(), badRequest(), forbidden(), cartRouter, carts, addItem(), applyCoupon(), assertAccess() (+29 more)
+Cohesion: 0.06
+Nodes (64): slugify(), uuid(), AppError, badRequest(), conflict(), forbidden(), formatZodError(), ValidationError (+56 more)
 
 ### Community 3 - "Auth Libraries & Email"
 Cohesion: 0.08
-Nodes (46): base64UrlEncode(), randomToken(), sha256Hex(), magicLinkTemplate(), sendMagicLinkEmail(), sendViaResend(), fail(), consumeMagicLink() (+38 more)
+Nodes (45): base64UrlEncode(), randomToken(), sha256Hex(), magicLinkTemplate(), sendMagicLinkEmail(), sendViaResend(), fail(), consumeMagicLink() (+37 more)
 
 ### Community 4 - "Migration Snapshot (Permissions)"
-Cohesion: 0.08
-Nodes (26): role_permissions_role_id_permission_id_pk, role_permissions_permission_id_system_permissions_id_fk, role_permissions_role_id_system_roles_id_fk, checkConstraints, compositePrimaryKeys, foreignKeys, indexes, name (+18 more)
+Cohesion: 0.04
+Nodes (46): permission_id, role_id, user_id, role_permissions_role_id_permission_id_pk, role_permissions_permission_id_system_permissions_id_fk, role_permissions_role_id_system_roles_id_fk, autoincrement, name (+38 more)
 
 ### Community 5 - "E-Commerce Schema (Products/Coupons)"
 Cohesion: 0.21
-Nodes (12): conflict(), couponCategories, couponProducts, deleteCategory(), CouponEvaluation, CouponLineItem, CouponRow, createCoupon() (+4 more)
+Nodes (18): CART_STATUSES, carts, categories, AddressSnapshot, BankTransferInfo, GuestSnapshot, id(), ProductSnapshot (+10 more)
 
 ### Community 6 - "Documentation & API Overview"
 Cohesion: 0.05
@@ -143,8 +140,8 @@ Cohesion: 0.06
 Nodes (35): parameters, responses, schemas, securitySchemes, openApiRouter, spec, adminPaths, authCustomerPaths (+27 more)
 
 ### Community 8 - "User Roles DB Snapshot"
-Cohesion: 0.04
-Nodes (46): permission_id, role_id, user_id, user_system_roles_user_id_role_id_pk, user_system_roles_role_id_system_roles_id_fk, user_system_roles_user_id_users_id_fk, autoincrement, name (+38 more)
+Cohesion: 0.08
+Nodes (26): user_system_roles_user_id_role_id_pk, user_system_roles_role_id_system_roles_id_fk, user_system_roles_user_id_users_id_fk, user_system_roles, checkConstraints, compositePrimaryKeys, foreignKeys, indexes (+18 more)
 
 ### Community 9 - "Package Dependencies"
 Cohesion: 0.06
@@ -155,32 +152,32 @@ Cohesion: 0.09
 Nodes (23): stores_user_id_users_id_fk, stores_slug_unique, stores_user_idx, checkConstraints, compositePrimaryKeys, foreignKeys, indexes, name (+15 more)
 
 ### Community 11 - "Customer & Shipping Services"
-Cohesion: 0.19
-Nodes (11): notFound(), shippingMethods, addAddress(), deleteAddress(), getCustomer(), getStoreCustomer(), unsetDefaultAddresses(), updateAddress() (+3 more)
+Cohesion: 0.21
+Nodes (10): notFound(), addAddress(), deleteAddress(), getCustomer(), getStoreCustomer(), unsetDefaultAddresses(), updateAddress(), updateCustomer() (+2 more)
 
 ### Community 12 - "R2 File Storage"
-Cohesion: 0.09
-Nodes (37): buildR2Key(), deleteFile(), R2Body, uploadFile(), productCategories, productImages, productVariantOptions, storeCountries (+29 more)
+Cohesion: 0.16
+Nodes (16): buildR2Key(), R2Body, uploadFile(), productImages, addProductImages(), collectStoreR2Keys(), createStore(), deleteStore() (+8 more)
 
 ### Community 13 - "Product & File Services"
-Cohesion: 0.16
-Nodes (17): rolePermissions, SYSTEM_ROLE_NAMES, systemPermissions, systemRoles, USER_PROVIDERS, users, userSystemRoles, assignPermissionToRole() (+9 more)
+Cohesion: 0.17
+Nodes (15): rolePermissions, SYSTEM_ROLE_NAMES, systemPermissions, systemRoles, USER_PROVIDERS, userSystemRoles, assignPermissionToRole(), assignUserRoles() (+7 more)
 
 ### Community 14 - "TypeScript Config"
 Cohesion: 0.11
 Nodes (18): compilerOptions, esModuleInterop, jsx, jsxImportSource, lib, module, moduleResolution, noEmit (+10 more)
 
 ### Community 15 - "Users DB Snapshot"
-Cohesion: 0.13
-Nodes (15): users_email_unique, users_provider_idx, users, checkConstraints, compositePrimaryKeys, columns, isUnique, name (+7 more)
+Cohesion: 0.04
+Nodes (48): name, dialect, store_settings_store_id_stores_id_fk, id, system_permissions_name_unique, users_email_unique, users_provider_idx, prevId (+40 more)
 
 ### Community 16 - "DB Middleware & Connection"
-Cohesion: 0.29
-Nodes (4): Database, deletePaymentMethod(), updatePaymentMethod(), Variables
+Cohesion: 0.20
+Nodes (7): createDb(), Database, dbMiddleware, shippingMethods, deleteShippingMethod(), updateShippingMethod(), Variables
 
 ### Community 17 - "System Roles DB Snapshot"
-Cohesion: 0.18
-Nodes (11): system_roles_name_unique, checkConstraints, compositePrimaryKeys, foreignKeys, indexes, name, columns, isUnique (+3 more)
+Cohesion: 0.17
+Nodes (12): system_roles_name_unique, checkConstraints, columns, compositePrimaryKeys, foreignKeys, indexes, name, columns (+4 more)
 
 ### Community 18 - "Customer Addresses Snapshot"
 Cohesion: 0.18
@@ -191,16 +188,16 @@ Cohesion: 0.06
 Nodes (32): country_code, store_id, autoincrement, name, notNull, primaryKey, type, store_countries_store_id_stores_id_fk (+24 more)
 
 ### Community 20 - "System Permissions Snapshot"
-Cohesion: 0.24
-Nodes (17): createDb(), coupons, productVariants, guestCartWith(), freshStore(), api(), ApiOptions, authCustomer() (+9 more)
+Cohesion: 0.21
+Nodes (17): coupons, productVariants, guestCartWith(), freshStore(), api(), ApiOptions, authCustomer(), authUser() (+9 more)
 
 ### Community 21 - "Magic Links DB Snapshot"
 Cohesion: 0.04
 Nodes (47): consumed, email, expires_at, subject_type, token_hash, autoincrement, default, name (+39 more)
 
 ### Community 22 - "Cart & Order Validators"
-Cohesion: 0.29
-Nodes (7): provider, autoincrement, name, notNull, primaryKey, type, columns
+Cohesion: 0.15
+Nodes (13): autoincrement, name, notNull, primaryKey, type, avatar_url, provider, autoincrement (+5 more)
 
 ### Community 23 - "Orders & Stats Services"
 Cohesion: 0.33
@@ -219,8 +216,8 @@ Cohesion: 0.33
 Nodes (6): provider_id, autoincrement, name, notNull, primaryKey, type
 
 ### Community 27 - "Avatar URL Column Snapshot"
-Cohesion: 0.29
-Nodes (11): slugify(), assertParentInStore(), buildTree(), CategoryNode, CategoryRow, createCategory(), ensureCategory(), ensureUniqueCategorySlug() (+3 more)
+Cohesion: 0.20
+Nodes (17): deleteFile(), addVariant(), collectProductR2Keys(), createProduct(), deleteProduct(), deleteVariant(), ensureProduct(), getProduct() (+9 more)
 
 ### Community 28 - "Bank Transfer Column Snapshot"
 Cohesion: 0.29
@@ -231,16 +228,16 @@ Cohesion: 0.32
 Nodes (5): orders, getCustomerOrder(), getOrder(), OrderFilters, updateOrderStatus()
 
 ### Community 30 - "Community 30"
-Cohesion: 0.18
-Nodes (11): system_permissions_name_unique, checkConstraints, compositePrimaryKeys, foreignKeys, indexes, name, columns, isUnique (+3 more)
+Cohesion: 0.33
+Nodes (5): COUPON_APPLIES_TO, COUPON_TYPES, createCouponSchema, updateCouponSchema, validateCouponSchema
 
 ### Community 31 - "Country Mode Column Snapshot"
 Cohesion: 0.29
 Nodes (7): country_mode, autoincrement, default, name, notNull, primaryKey, type
 
 ### Community 32 - "Community 32"
-Cohesion: 0.31
-Nodes (5): AppError, formatZodError(), unauthorized(), ValidationError, permissionMiddleware()
+Cohesion: 0.50
+Nodes (3): PAYMENT_METHOD_TYPES, createPaymentMethodSchema, updatePaymentMethodSchema
 
 ### Community 33 - "Currency Code Column Snapshot"
 Cohesion: 0.29
@@ -259,20 +256,20 @@ Cohesion: 0.29
 Nodes (7): decimal_separator, autoincrement, default, name, notNull, primaryKey, type
 
 ### Community 37 - "Description Column Snapshot"
-Cohesion: 0.29
-Nodes (7): description, autoincrement, name, notNull, primaryKey, type, columns
+Cohesion: 0.15
+Nodes (13): description, name, autoincrement, name, notNull, primaryKey, type, autoincrement (+5 more)
 
 ### Community 38 - "Community 38"
-Cohesion: 0.25
-Nodes (7): name, dialect, id, prevId, tables, customer_addresses, version
+Cohesion: 0.50
+Nodes (3): SHIPPING_METHOD_TYPES, createShippingMethodSchema, updateShippingMethodSchema
 
 ### Community 39 - "Is Active Column Snapshot"
 Cohesion: 0.29
 Nodes (7): is_active, autoincrement, default, name, notNull, primaryKey, type
 
 ### Community 40 - "Logo R2 Key Column Snapshot"
-Cohesion: 0.29
-Nodes (7): logo_r2_key, autoincrement, name, notNull, primaryKey, type, columns
+Cohesion: 0.15
+Nodes (13): logo_r2_key, slug, autoincrement, name, notNull, primaryKey, type, autoincrement (+5 more)
 
 ### Community 41 - "Require Customer ID Column Snapshot"
 Cohesion: 0.29
@@ -286,61 +283,37 @@ Nodes (7): tax_label, autoincrement, default, name, notNull, primaryKey, type
 Cohesion: 0.29
 Nodes (7): tax_rate, autoincrement, default, name, notNull, primaryKey, type
 
-### Community 44 - "Community 44"
-Cohesion: 0.25
-Nodes (8): store_settings_store_id_stores_id_fk, columnsFrom, columnsTo, name, onDelete, onUpdate, tableFrom, tableTo
-
 ### Community 45 - "Updated At Column Snapshot"
 Cohesion: 0.29
 Nodes (7): updated_at, autoincrement, default, name, notNull, primaryKey, type
-
-### Community 46 - "Community 46"
-Cohesion: 0.29
-Nodes (7): name, autoincrement, name, notNull, primaryKey, type, columns
-
-### Community 47 - "Community 47"
-Cohesion: 0.29
-Nodes (7): checkConstraints, compositePrimaryKeys, foreignKeys, indexes, name, uniqueConstraints, store_settings
-
-### Community 48 - "Community 48"
-Cohesion: 0.33
-Nodes (6): autoincrement, name, notNull, primaryKey, type, avatar_url
 
 ### Community 49 - "ID Column Snapshot"
 Cohesion: 0.33
 Nodes (6): id, autoincrement, name, notNull, primaryKey, type
 
-### Community 50 - "Community 50"
-Cohesion: 0.33
-Nodes (6): slug, autoincrement, name, notNull, primaryKey, type
-
 ### Community 57 - "Drizzle Migration Journal"
 Cohesion: 0.50
 Nodes (3): dialect, entries, version
 
-### Community 58 - "Claude Settings Hooks"
-Cohesion: 0.40
-Nodes (4): hooks, PreToolUse, worktree, bgIsolation
-
 ## Knowledge Gaps
-- **482 isolated node(s):** `PreToolUse`, `bgIsolation`, `allow`, `version`, `dialect` (+477 more)
+- **483 isolated node(s):** `PreToolUse`, `allow`, `version`, `configurations`, `version` (+478 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `tables` connect `Community 38` to `Migration Snapshot (Permissions)`, `User Roles DB Snapshot`, `Stores DB Snapshot`, `Community 47`, `Users DB Snapshot`, `System Roles DB Snapshot`, `Store Countries Snapshot`, `Magic Links DB Snapshot`, `Community 30`?**
+- **Why does `tables` connect `Users DB Snapshot` to `Migration Snapshot (Permissions)`, `User Roles DB Snapshot`, `Stores DB Snapshot`, `System Roles DB Snapshot`, `Store Countries Snapshot`, `Magic Links DB Snapshot`?**
   _High betweenness centrality (0.074) - this node is a cross-community bridge._
-- **Why does `columns` connect `Bank Transfer Column Snapshot` to `Currency Code Column Snapshot`, `Currency Symbol Column Snapshot`, `Decimal Places Column Snapshot`, `Decimal Separator Column Snapshot`, `Require Customer ID Column Snapshot`, `Tax Label Column Snapshot`, `Tax Rate Column Snapshot`, `Updated At Column Snapshot`, `Community 47`, `Store Countries Snapshot`, `Migration Snapshot Root`, `Country Mode Column Snapshot`?**
-  _High betweenness centrality (0.051) - this node is a cross-community bridge._
-- **Why does `columns` connect `Logo R2 Key Column Snapshot` to `Is Active Column Snapshot`, `User Roles DB Snapshot`, `Stores DB Snapshot`, `Updated At Column Snapshot`, `Community 46`, `ID Column Snapshot`, `Community 50`, `Migration Snapshot Root`?**
+- **Why does `columns` connect `Bank Transfer Column Snapshot` to `Currency Code Column Snapshot`, `Currency Symbol Column Snapshot`, `Decimal Places Column Snapshot`, `Decimal Separator Column Snapshot`, `Require Customer ID Column Snapshot`, `Tax Label Column Snapshot`, `Tax Rate Column Snapshot`, `Updated At Column Snapshot`, `Users DB Snapshot`, `Store Countries Snapshot`, `Migration Snapshot Root`, `Country Mode Column Snapshot`?**
+  _High betweenness centrality (0.050) - this node is a cross-community bridge._
+- **Why does `columns` connect `Logo R2 Key Column Snapshot` to `Migration Snapshot (Permissions)`, `Description Column Snapshot`, `Is Active Column Snapshot`, `Stores DB Snapshot`, `Updated At Column Snapshot`, `ID Column Snapshot`, `Migration Snapshot Root`?**
   _High betweenness centrality (0.030) - this node is a cross-community bridge._
-- **What connects `PreToolUse`, `bgIsolation`, `allow` to the rest of the system?**
-  _483 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `PreToolUse`, `allow`, `version` to the rest of the system?**
+  _484 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Error Handling & Validators` be split into smaller, more focused modules?**
-  _Cohesion score 0.06178217821782178 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06303030303030303 - nodes in this community are weakly interconnected._
 - **Should `Core DB Schema` be split into smaller, more focused modules?**
-  _Cohesion score 0.06682692307692308 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected._
 - **Should `Crypto & Utility Layer` be split into smaller, more focused modules?**
-  _Cohesion score 0.12181616832779624 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06070175438596491 - nodes in this community are weakly interconnected._
