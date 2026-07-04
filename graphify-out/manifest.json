@@ -210,7 +210,7 @@
     "semantic_hash": ""
   },
   "src/routes/categories.ts": {
-    "mtime": 1782848798.4659016,
+    "mtime": 1783137437.816482,
     "ast_hash": "d07b8250c9c6c60409a4fed5b9b6d958",
     "semantic_hash": ""
   },
@@ -360,9 +360,9 @@
     "semantic_hash": "d10af27653c8637cbd72c4d929593f2b"
   },
   "src/validators/categories.ts": {
-    "mtime": 1781676518.68052,
-    "ast_hash": "6c9fa6570a64d2c5e2f5f8fa5f63bced",
-    "semantic_hash": "6c9fa6570a64d2c5e2f5f8fa5f63bced"
+    "mtime": 1783194929.3799841,
+    "ast_hash": "7ba7a35f0455ac1a8bab1680b7537b33",
+    "semantic_hash": ""
   },
   "src/validators/common.ts": {
     "mtime": 1781676386.2474024,
@@ -480,9 +480,9 @@
     "semantic_hash": ""
   },
   ".claude/settings.json": {
-    "mtime": 1781723879.346702,
-    "ast_hash": "bfee062c3962c14264fd704e975a6b38",
-    "semantic_hash": "bfee062c3962c14264fd704e975a6b38"
+    "mtime": 1783194915.3286295,
+    "ast_hash": "2bc252fe0bbe3f4799a9982bb20a28c3",
+    "semantic_hash": ""
   },
   "CLAUDE.md": {
     "mtime": 1781723879.346521,
@@ -505,8 +505,8 @@
     "semantic_hash": "03aaf998446b8649da653ff65f8f2ef9"
   },
   "test/categories-contract.test.ts": {
-    "mtime": 1782851684.2254224,
-    "ast_hash": "555a98d08ea1e058bbd671aecb880dde",
+    "mtime": 1783194947.5107548,
+    "ast_hash": "bb8db6d224c5c0c5657c0c71baff1364",
     "semantic_hash": ""
   },
   "test/orders-contract.test.ts": {
@@ -522,11 +522,6 @@
   "test/stats-contract.test.ts": {
     "mtime": 1782852559.0796092,
     "ast_hash": "e82f9ea75ae4a50e42b87bdaae4085f4",
-    "semantic_hash": ""
-  },
-  ".vscode/launch.json": {
-    "mtime": 1782852375.2341871,
-    "ast_hash": "ec6128a7b436c61a9597fb9013c65b9e",
     "semantic_hash": ""
   },
   ".github/workflows/ci.yml": {
