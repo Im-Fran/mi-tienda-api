@@ -1,4 +1,4 @@
-import { and, eq } from "drizzle-orm";
+import { and, eq, isNull } from "drizzle-orm";
 import type { Database } from "../db";
 import { categories } from "../db/schema";
 import { badRequest, conflict, notFound } from "../lib/errors";
@@ -33,13 +33,17 @@ async function ensureUniqueCategorySlug(
   storeId: string,
   base: string,
   excludeId?: string,
+  parentId: string | null = null,
 ): Promise<string> {
   const root = slugify(base);
+  const parentClause =
+    parentId === null ? isNull(categories.parentId) : eq(categories.parentId, parentId);
   let candidate = root;
   for (let i = 2; i <= 50; i++) {
     const existing = await db.query.categories.findFirst({
       where: and(
         eq(categories.storeId, storeId),
+        parentClause,
         eq(categories.slug, candidate),
       ),
     });
@@ -101,6 +105,8 @@ export async function createCategory(
     db,
     storeId,
     input.slug ?? input.name,
+    undefined,
+    input.parentId ?? null,
   );
   const [category] = await db
     .insert(categories)
@@ -128,17 +134,13 @@ export async function updateCategory(
     sortOrder?: number;
   },
 ) {
-  await ensureCategory(db, storeId, id);
+  const category = await ensureCategory(db, storeId, id);
 
   const patch: Partial<CategoryRow> = {
     name: input.name,
     description: input.description,
     sortOrder: input.sortOrder,
   };
-
-  if (input.slug) {
-    patch.slug = await ensureUniqueCategorySlug(db, storeId, input.slug, id);
-  }
 
   if (input.parentId !== undefined) {
     if (input.parentId === null) {
@@ -151,6 +153,43 @@ export async function updateCategory(
         throw badRequest("Reparenting would create a cycle");
       patch.parentId = input.parentId;
     }
+  }
+
+  const parentChanging =
+    input.parentId !== undefined && patch.parentId !== category.parentId;
+  const effectiveParentId = parentChanging
+    ? (patch.parentId ?? null)
+    : category.parentId;
+
+  if (parentChanging) {
+    // Reparenting must validate the slug's uniqueness under the new parent
+    // and block on conflict instead of auto-suffixing.
+    const effectiveSlug = input.slug ?? category.slug;
+    const parentClause =
+      effectiveParentId === null
+        ? isNull(categories.parentId)
+        : eq(categories.parentId, effectiveParentId);
+    const existing = await db.query.categories.findFirst({
+      where: and(
+        eq(categories.storeId, storeId),
+        parentClause,
+        eq(categories.slug, effectiveSlug),
+      ),
+    });
+    if (existing && existing.id !== id) {
+      throw conflict(
+        "A category with this slug already exists under the target parent",
+      );
+    }
+    if (input.slug) patch.slug = effectiveSlug;
+  } else if (input.slug) {
+    patch.slug = await ensureUniqueCategorySlug(
+      db,
+      storeId,
+      input.slug,
+      id,
+      category.parentId,
+    );
   }
 
   const [updated] = await db
