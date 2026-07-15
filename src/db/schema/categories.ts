@@ -11,7 +11,7 @@ import { id, timestamps } from "./common";
 import { products } from "./products";
 import { stores } from "./stores";
 
-/** Nested categories per store. `slug` is unique per store. */
+/** Nested categories per store. `slug` is unique per parent category (not per store). */
 export const categories = sqliteTable(
   "categories",
   {
@@ -30,7 +30,17 @@ export const categories = sqliteTable(
     ...timestamps(),
   },
   (t) => [
-    uniqueIndex("categories_store_slug_unique").on(t.storeId, t.slug),
+    // Scoped to (storeId, parentId, slug) so siblings under different parents
+    // can share a slug (e.g. /macbook/air vs /iphone/air).
+    // NOTE: SQLite treats NULL != NULL in unique indexes, so this does NOT
+    // enforce uniqueness among root categories (parentId IS NULL) at the DB
+    // level. Root slug uniqueness is validated in the service layer
+    // (src/services/categories.ts).
+    uniqueIndex("categories_store_parent_slug_unique").on(
+      t.storeId,
+      t.parentId,
+      t.slug,
+    ),
     index("categories_parent_idx").on(t.parentId),
   ],
 );
