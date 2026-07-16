@@ -14,9 +14,10 @@ import {
 export const paymentsRouter = new Hono<AppEnv>();
 paymentsRouter.use(authMiddleware, storeContextMiddleware);
 
-paymentsRouter.get("/methods", async (c) =>
-  c.json(success(await svc.listPaymentMethods(c.var.db, c.var.store.id))),
-);
+paymentsRouter.get("/methods", async (c) => {
+  const methods = await svc.listPaymentMethods(c.var.db, c.var.store.id);
+  return c.json(success({ methods }));
+});
 
 paymentsRouter.post("/methods", async (c) => {
   const input = await parseJson(c, createPaymentMethodSchema);
